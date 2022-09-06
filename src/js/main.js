@@ -52,7 +52,7 @@ $(document).ready( function() {
 
 const partnersSlider = new Swiper('.partners-slider', {
 
-  slidesPerView: 3,
+  slidesPerView: 1,
   speed: 800,
   spaceBetween: 30,
   loop: true,
@@ -62,13 +62,16 @@ const partnersSlider = new Swiper('.partners-slider', {
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 20
+      spaceBetween: 30
     },
-       
-    // when window width is >= 640px
-    640: {
+    576: {
       slidesPerView: 2,
-      spaceBetween: 40
+      spaceBetween: 30
+    },   
+    // when window width is >= 991px
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 30
     }
   },
   pagination: {
@@ -77,6 +80,15 @@ const partnersSlider = new Swiper('.partners-slider', {
     clickable: true,
   },
 });
+
+
+
+
+$(".wrapper .tab").click(function() {
+	$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+	$(".tab_item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
+
 
 
 })

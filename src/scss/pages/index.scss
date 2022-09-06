@@ -143,7 +143,7 @@ h2 {
   transition: all ease 555ms;
 }
 .header_scroll { 
-  background: rgba(206, 214, 224, 0.959);
+  background: rgba(245, 247, 249, 0.959);
   padding-top: 20px;
   padding-bottom: 20px;
   @media (max-width: 991px) {
@@ -189,7 +189,7 @@ h2 {
 }
 .header-right__menu {
   @media (max-width: 991px) {
-    background-color:  rgba(225, 225, 225, 0.989);
+    background-color: rgba(245, 247, 249, 0.989);
   }
 }
 @media (max-width: 991px) {
@@ -270,7 +270,7 @@ h2 {
   margin-left: 20px;
   }
   @media (max-width: 991px) {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     margin-left: 0px;
   } 
   @media (max-width: 767px) {
@@ -566,6 +566,163 @@ h2 {
   width: 80px;
   background: var(--red);
 }
+
+/******TABS*********/
+.wrapper .active { color: red; }
+.tab_item { display: none; }
+.tab_item:first-child { display: block; }
+
+.tab-content__summary {
+ display: flex;
+ justify-content: space-between;
+}
+.tab-content__summary span {
+ font-weight: 600;
+}
+.tab-content__summary p {
+ line-height: 1.8;
+ color: var(--black);
+}
+.summary__text {
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+.tabs {
+ padding-top: 30px;
+ display: flex;
+ justify-content: space-between;
+}
+.tab {
+ font-size: 14px;
+ font-weight: 900;
+ line-height: 1.6;
+ text-transform: uppercase;
+ color: var(--black);
+ border-bottom: 1px solid #CED6E0;
+}
+
+
+/*********ABOUT***********/
+.about__body {
+  padding-bottom: 148px;
+  @media (max-width: 767px) {
+    padding-bottom: 60px;
+  }
+}
+.about__body img, .education__body img {
+  width: 575px;
+  height: auto;
+  max-width: 100%;
+  max-height: auto;
+}
+.about__body p, .education__body p {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  @media (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+} 
+.about__body h2, .education__body h2 {
+  @media (max-width: 767px) {
+    padding-top: 20px;
+  }
+}
+.education__body {
+  padding-bottom: 148px;
+  @media (max-width: 767px) {
+    padding-bottom: 60px;
+  }
+}
+/*******FAQ******/
+.questions__body {
+  background: url(../img/backing_faq.png)no-repeat;
+  background-size: 100% 100%;
+  padding-top: 160px;
+  padding-bottom: 150px;
+  @media (max-width: 575px) {
+    background-size: 100% 100%;
+  }
+}
+.faq__title {
+  padding-bottom: 40px;
+  margin-bottom: 0;
+}
+/**************accordion********************/
+
+
+.home__accordion .accordion-body {
+  background: var(--white);
+  padding: 0px 70px 30px 30px;
+  z-index: 5;
+  position: relative;
+  border-radius: 10px;
+  @media (max-width: 991px){
+    padding: 0px 20px 15px 20px;
+  } 
+}
+.home__accordion .accordion-item {
+  border-bottom: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: var(--white);
+  border: 1px solid #F1F2F4;
+  box-shadow: 0px 5px 30px #DFE4EA;
+  border-radius: 10px;
+}
+.home__accordion code {
+    font-family: 'Raleway', sans-serif;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+  @media (max-width: 991px){
+    font-size: 12px;
+  }
+}
+.home__accordion .accordion-button {
+  background: transparent;
+  font-family: 'Raleway', sans-serif;
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.7;
+  border: 0;
+  padding: 15px 26px 15px 30px;
+  box-shadow: 0px 5px 30px #F1F2F4;
+  border-radius: 10px;
+  }
+.home__accordion .accordion-button:focus {
+  border: 0;
+  box-shadow: none;
+}
+.home__accordion .accordion-button:not(.collapsed) {
+  color: var(--black);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.7;
+  box-shadow: none;
+  border: 0;
+  background: transparent;
+  padding: 0; 
+  padding: 15px 26px 15px 30px;
+  border-radius: 10px;
+}
+.home__accordion .accordion-button::after {
+ 
+  transition: all ease 555ms;
+} 
+.home__accordion .accordion-button:not(.collapsed)::after {
+  transition: all ease 555ms;
+  display: flex;
+  align-items: center;
+  background-image: url(../img/check_mark.svg);
+  transform: rotate(-180deg);
+  
+}
+
+
 /************************************FOOTER********************************************************/
 
 .footer__body {
