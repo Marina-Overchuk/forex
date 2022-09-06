@@ -73,6 +73,7 @@ h1 {
   font-weight: 900;
   color: var(--black);
   line-height: 1.25;
+  text-transform: uppercase;
   @media (max-width: 1279px) {
     font-size: 45px; 
   }
@@ -82,9 +83,7 @@ h1 {
    @media (max-width: 575px) {
     font-size: 24px; 
   }
-  @media (max-height: 475px) {
-    font-size: 20px;
-   }
+ 
 }
 h2 { 
   font-family: 'Raleway', sans-serif;
@@ -92,6 +91,7 @@ h2 {
   font-weight: 900;
   color: var(--black);
   line-height: 1.4;
+  text-transform: uppercase;
   @media (max-width: 1279px) {
     font-size: 30px; 
   }
@@ -101,9 +101,6 @@ h2 {
    @media (max-width: 575px) {
     font-size: 20px; 
   }
-  @media (max-height: 475px) {
-    font-size: 17px;
-   }
 }
 
 
@@ -304,73 +301,37 @@ h2 {
   max-height: auto;
 }
 
-
-
-
-
-
-
-
-
-/*************************************HOME***********************************************************/
-
-
+/*************************************HOME*******************************************************/
 /******BUTTON******/
 .wrapper__button {
   position: relative;
-  background: var(--color2);
-  box-shadow: 0px 15px 30px -10px rgba(241, 104, 36, 0.6);
-  border-radius: 30px;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid var(--red);
   text-align: center;
   transition: all 0.555s ease;
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.4;
   text-transform: uppercase;
-  color: var(--color1);
-  border: 2px solid var(--color2);
-    @media (max-width: 767px) {
-      font-size: 14px;
-    }
-    @media (max-height: 475px) {
-      font-size: 14px;
-    }
+  color: var(--black);
     &:hover {
-     background: transparent;
+     background: var(--red);
      text-decoration: none;
-     color: var(--color2);
-    &:hover .button__time {
-       color:var(--color3);
-     }
+     color: var(--white);
     }
 }
 .a__btn {
-  max-width: 420px;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  padding-right: 101px;
-  padding-left: 58px;
-  @media (max-width: 991px) {
-    padding-top: 13px;
-    padding-bottom: 13px;
-  }
-  @media (max-width: 767px) {
-    padding-left: 15px;
-    padding-right: 45px;
-    padding-top: 9px;
-    padding-bottom: 10px;
-  }
-  @media (max-height: 475px) {
-    padding-left: 15px;
-    padding-right: 45px;
-    padding-top: 9px;
-    padding-bottom: 10px;
-  }
+  display: block;
+  max-width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
-/*************************************HOME*******************************************************/
-
+.btn-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+/***********************/
 .title-block__body {
   padding-top: 140px;
   padding-bottom: 140px;
@@ -378,8 +339,19 @@ h2 {
   background-position: right -350px bottom 0px;
   background-size: cover;
 }
+.title-block__body p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8;
+  padding-top: 30px;
+}
 .title-block__image {
   padding-left: 70px;
+  @media (max-width: 575px) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+  }
 }
 .title-block__image svg {
   width: 707px;
@@ -387,15 +359,16 @@ h2 {
   max-width: 100%;
   max-height: auto;
 }
-.search-brockers__body {
+.search-brokers__body {
   margin-top: -36px;
+  padding-bottom: 120px;
 }
-.search-brockers__col {
-  @media (max-height: 991px) {
+.search-brokers__col {
+  @media (max-width: 991px) {
     padding-bottom: 30px;
   }
 }
-.search-brockers__block {
+.search-brokers__block {
   background: #FFFFFF;
   border: 1px solid #F1F2F4;
   box-shadow: 0px 5px 30px #DFE4EA;
@@ -406,12 +379,16 @@ h2 {
   background-size: 100px;
   min-height: 100%;
   cursor: pointer;
-  @media (max-height: 1279px) {
+  @media (max-width: 1279px) {
     padding: 20px 15px;
     background-position: right 15px top 20px;
   }
+  @media (max-width: 991px) {
+    padding: 30px 30px;
+    background-position: right 30px top 30px;
+  }
 }
-.search-brockers__block h3 {
+.search-brokers__block h3 {
   color: var(--red);
   text-transform: uppercase;
   font-size: 20px;
@@ -419,7 +396,7 @@ h2 {
   line-height: 1.5;
   padding-bottom: 10px;
 }
-.search-brockers__block a {
+.search-brokers__block a {
   color: var(--black);
   font-size: 18px;
   font-weight: 600;
@@ -428,11 +405,18 @@ h2 {
   text-decoration: none;
   color: var(--red);
   }
+  @media (max-width: 991px) {
+    font-size: 16px;
+  }
 }
-.search-brockers__block li {
+.search-brokers__block li {
   background: url(../img/red_dot.svg) no-repeat;
   padding-left: 19px;
   background-position: left center;
+  background-size: 9px;
+  @media (max-width: 575px) {
+    background-size: 7px;
+  }
 }
 .select__option select {
   width: 100%;
@@ -449,10 +433,139 @@ h2 {
   font-weight: 600;
   line-height: 1.7;
 }
-.brockers-block__wrapper {
+.brokers-block__wrapper {
+  margin-bottom: 60px;
+  @media (max-width: 991px) {
+    margin-bottom: 0px;
+  }
+}
+.search-brokers__title h3 {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.5;
+  color: var(--black);
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.block-links__wrapper {
+  @media (max-width: 575px) {
+    margin-bottom: 15px;
+  }
+}
+.search-brokers__block-links {
+  display: flex;
+  cursor: pointer;
+  padding: 26px 50px;
+  background: #FFFFFF;
+  border: 1px solid #F1F2F4;
+  box-shadow: 0px 5px 30px #F1F2F4;
+  border-radius: 10px;
+  transition: all ease 555ms;
+  min-height: 100%;
+  &:hover {
+    text-decoration: none;
+  }
+  &:hover h4 {
+    color: var(--red);
+  }
+  &:hover img {
+   filter: invert(8%) sepia(100%) saturate(7267%) hue-rotate(18deg) brightness(91%) contrast(119%); 
+  }
+  @media (max-width: 1279px) {
+    padding: 15px 25px;
+  }
+  @media (max-width: 767px) {
+    padding: 15px 15px;
+  }
+}
+.search-brokers__block-links h4 {
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: uppercase; 
+  margin-top: auto;
+  margin-bottom: auto;
+  color: var(--black);
+  transition: all ease 555ms;
+  @media (max-width: 1279px) {
+    padding-left: 15px;
+  }
+  @media (max-width: 991px) {
+    font-size: 14px;
+  }
+}
+.search-brokers__block-links img {
+  width: 50px;
+  height: auto;
+  max-width: 50px;
+  max-height: auto;
+  transition: all ease 555ms;
+  @media (max-width: 991px) {
+    width: 35px;
+    height: auto;
+    max-width: 35px;
+    max-height: auto;
+  }
+}
+/***broker partners***/
+.broker-partners__body {
+  margin-bottom: 120px;
+}
+.broker-partners__body h2 {
+  padding-bottom: 40px;
+  margin-bottom: 0;
+}
+.rating {
+  display: flex;
+  justify-content: space-between
+}
+.brokers__logo {
+  width: 148px;
+  height: auto;
+  max-width: 100%;
+  max-height: auto;
+}
+.stars__list {
+  display: flex;
+}
+.stars__list img {
+  width: 20px;
+  height: auto;
+  max-width: 100%;
+  max-height: auto;
+}
+.broker-partners__block {
+  padding: 30px;
+  background: #FFFFFF;
+  border: 1px solid #F1F2F4;
+  box-shadow: 0px 5px 30px #F1F2F4;
+  border-radius: 10px;
+}
+.broker__visit-site {
+  margin-top: 102px;
+}
+.broker__visit-site p {
+  padding-top: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #57606F;
+  text-align: center;
+}
+.partners-slider .swiper-wrapper {
   margin-bottom: 60px;
 }
-
+.partners__pagination .swiper-pagination-bullet {
+  width: 40px;
+  height: 8px;
+  border-radius: 4px;
+  background: #CED6E0;
+}
+.partners__pagination .swiper-pagination-bullet-active {
+  width: 80px;
+  background: var(--red);
+}
 /************************************FOOTER********************************************************/
 
 .footer__body {
