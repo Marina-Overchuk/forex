@@ -79,17 +79,24 @@ const partnersSlider = new Swiper('.partners-slider', {
     type: 'bullets',
     clickable: true,
   },
+  navigation: {
+    nextEl: '.home-button-next',
+    prevEl: '.home-button-prev',
+  }
 });
 
 
-
-
-$(".wrapper .tab").click(function() {
-	$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
-	$(".tab_item").hide().eq($(this).index()).fadeIn()
-}).eq(0).addClass("active");
-
-
+  //tabs
+  $(function() {
+    
+    $('.tabs__caption').on('click', 'li:not(.active)', function() {
+      $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+    });
+    
+  });
+  
 
 })
 
