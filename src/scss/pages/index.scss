@@ -917,7 +917,7 @@ h3 {
     padding-bottom: 60px;
   }
   @media (max-width: 575px){
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 40px;
   }
 }
@@ -1013,19 +1013,28 @@ h3 {
 /*******************FOREX BASICS PAGE**********************************/
 .forex-basics__page {
   padding-bottom: 94px;
+  @media (max-width: 991px){
+    padding-bottom: 40px;
+  }
+  @media (max-width: 767px){
+    padding-bottom: 20px;
+  }
+  @media (max-width: 575px){
+    padding-bottom: 0px;
+  }
 }
-.forex-basics-title__body {
+.forex-basics-title__body, .trading-tips-title__body, .analysis-title__body, .trading-fundamentals-title__body {
   padding-top: 160px;
   padding-bottom: 60px;
   @media (max-width: 991px){
     padding-top: 140px;
+    padding-bottom: 40px;
   }
   @media (max-width: 767px){
     padding-top: 120px;
   }
   @media (max-width: 575px){
-    padding-top: 100px;
-    padding-bottom: 40px;
+    padding-top: 80px;
   }
 }
 .forex-basics__list {
@@ -1057,6 +1066,9 @@ h3 {
   @media (max-width: 1279px){
     line-height: 1.5;
     font-size: 17px;
+  }
+  @media (max-width: 575px){
+    font-size: 16px;
   }
 }
 .forex-basics__block {
@@ -1164,6 +1176,86 @@ h3 {
   @media (max-width: 767px){
     padding-bottom: 10px;
   }
+}
+
+/************************TRADING TIPS PAGE*******************************************************/
+.trading-tips__page, .analysis__page, .trading-fundamentals__page {
+  padding-bottom: 128px;
+  @media (max-width: 991px) {
+    padding-bottom: 70px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 575px) {
+    padding-bottom: 30px;
+  }
+}
+.trading-tips-content__body h3 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  @media (max-width: 767px) {
+    padding-bottom: 10px;
+  }
+}
+.trading-tips-content__body p {
+  padding-bottom: 20px;
+  @media (max-width: 991px) {
+    padding-bottom: 10px;
+  }
+}
+/**********************2 branches of analysis page*************************************************/
+
+.analysis__page p {
+  padding-bottom: 20px;
+  @media (max-width: 991px) {
+    padding-bottom: 10px;
+  }
+}
+.analysis-content__body img {
+  width: 315px;
+  height: auto;
+  max-width: 100%;
+  max-height: auto;
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+.analysis-content__body {
+  padding-bottom: 20px;
+  @media (max-width: 767px) {
+    padding-bottom: 0px;
+  }
+}
+.analysis__block h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/******************Forex trading fundamentals page***********************************************/
+.trading-fundamentals__page {
+
+}
+.trading-fundamentals__page p {
+  padding-bottom: 20px;
+  @media (max-width: 991px) {
+    padding-bottom: 10px;
+  }
+}
+.trading-fundamentals__block {
+  padding-top: 10px;
+}
+.trading-fundamentals__block img {
+  width: 315px;
+  height: auto;
+  max-width: 100%;
+  max-height: auto;
+  @media (max-width: 991px) {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+}
+.trading-fundamentals__block h3 {
+  padding-bottom: 10px;
 }
 /************************************FOOTER********************************************************/
 
