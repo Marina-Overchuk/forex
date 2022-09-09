@@ -353,6 +353,7 @@ h3 {
 }
 .a__btn {
   display: block;
+  width: 200px;
   max-width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -488,6 +489,7 @@ h3 {
   font-weight: 600;
   line-height: 1.7;
   background: transparent;
+  color: var(--black);
   @media (max-width: 991px) {
     font-size: 16px;
   }
@@ -658,7 +660,6 @@ h3 {
 .broker__visit-site {
   margin-top: auto;
   padding-top: 56px;
-  
 }
 .broker__visit-site p {
   padding-top: 10px;
@@ -905,7 +906,8 @@ h3 {
 .education__page {
  padding-bottom: 90px;
 }
-.education-title__body {
+.education-title__body, .about-us-title__body, 
+.how_to_choose-title__body, .broker-reviews-title__body {
   padding-top: 160px;
   padding-bottom: 110px;
   @media (max-width: 991px){
@@ -1023,7 +1025,11 @@ h3 {
     padding-bottom: 0px;
   }
 }
-.forex-basics-title__body, .trading-tips-title__body, .analysis-title__body, .trading-fundamentals-title__body {
+.forex-basics-title__body, .trading-tips-title__body, 
+.analysis-title__body, .trading-fundamentals-title__body, 
+.sc-trading-title__body, .asset-allocation-title__body, 
+.profitable-strategy-title__body, .broker-unlim-leverage-title__body, 
+.review-subpage-title__body {
   padding-top: 160px;
   padding-bottom: 60px;
   @media (max-width: 991px){
@@ -1037,14 +1043,14 @@ h3 {
     padding-top: 80px;
   }
 }
-.forex-basics__list {
+.forex-basics__list, .review-subpage__list {
   margin-left: 10%;
   @media (max-width: 767px){
    margin-left: 0;
    margin-bottom: 30px;
   }
 }
-.forex-basics__list li {
+.forex-basics__list li, .review-subpage__list li {
   background: url(../img/red_dot.svg) no-repeat;
   padding-left: 19px;
   background-position: left center;
@@ -1053,7 +1059,7 @@ h3 {
     margin-bottom: 10px;
   }
 }
-.forex-basics__list li a {
+.forex-basics__list li a, .review-subpage__list li a {
   font-size: 18px;
   font-weight: 900;
   line-height: 2.2;
@@ -1179,7 +1185,10 @@ h3 {
 }
 
 /************************TRADING TIPS PAGE*******************************************************/
-.trading-tips__page, .analysis__page, .trading-fundamentals__page {
+.trading-tips__page, .analysis__page, 
+.trading-fundamentals__page, .sc-trading__page, 
+.asset-allocation__page, .profitable-strategy__page, 
+.about-us__page, .how_to_choose__page, .broker-unlim-leverage__page {
   padding-bottom: 128px;
   @media (max-width: 991px) {
     padding-bottom: 70px;
@@ -1231,33 +1240,346 @@ h3 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/******************Forex trading fundamentals page***********************************************/
-.trading-fundamentals__page {
+/*************Forex trading fundamentals page, Social/copy trading page, asset Allocation page, profitable-strategy page*****************/
 
-}
-.trading-fundamentals__page p {
+.trading-fundamentals__page p, .sc-trading__block p,
+.asset-allocation__block p, .profitable-strategy__block p,
+.about-us__text-block p, .how_to_choose__block p, 
+.broker-unlim-leverage__text-block p, .review__content-block p {
   padding-bottom: 20px;
   @media (max-width: 991px) {
     padding-bottom: 10px;
   }
 }
-.trading-fundamentals__block {
+.trading-fundamentals__block, .sc-trading__block, 
+.asset-allocation__block, .profitable-strategy__block, .how_to_choose__block {
   padding-top: 10px;
 }
-.trading-fundamentals__block img {
+.trading-fundamentals__block img, .sc-trading__block img, 
+.asset-allocation__block img, .profitable-strategy__block img {
   width: 315px;
   height: auto;
-  max-width: 100%;
+  max-width: 100%; 
   max-height: auto;
   @media (max-width: 991px) {
     margin-bottom: 20px;
     margin-top: 10px;
   }
 }
-.trading-fundamentals__block h3 {
+.trading-fundamentals__block h3, .sc-trading__block h3, 
+.asset-allocation__block h3, .profitable-strategy__block h3, 
+.about-us__text-block h3, .how_to_choose__block h3,
+.broker-unlim-leverage__text-block h3, .review__content-block h3 {
   padding-bottom: 10px;
 }
-/************************************FOOTER********************************************************/
+
+/******************************profitable-strategy page********************************/
+.profitable-strategy__block img {
+  margin-bottom: 30px;
+  @media (max-width: 991px) {
+    margin-bottom: 20px;
+  }
+}
+
+/**********************************About US PAGE**********************************************/
+
+.about_us__image1, .how_to_choose__image {
+  text-align: center;
+}
+.about_us__image1 img, .how_to_choose__image img {
+  width: 593px;
+  height: auto;
+  max-width: 100%;
+  max-height: auto;
+}
+.about-us__text-block-pb {
+  padding-bottom: 40px;
+  @media (max-width: 767px) {
+    padding-bottom: 30px;
+  }
+  @media (max-width: 575px) {
+    padding-bottom: 20px;
+  }
+}
+.about-us__team-block {
+  margin-top: 10px;
+  @media (max-width: 767px) {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.team-block-text {
+  padding-top: 20px;
+  justify-content: space-between;
+}
+.about-us__team-block h5 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0;
+  @media (max-width: 1279px) {
+    font-size: 16px;
+  }
+  @media (max-width: 991px) {
+    font-size: 15px;
+  }
+  @media (max-width: 767px) {
+    font-size: 17px;
+  }
+}
+.about-us__team-block p {
+  text-transform: uppercase;
+  @media (max-width: 1279px) {
+    font-size: 13px;
+  }
+  @media (max-width: 991px) {
+    font-size: 12px;
+  }
+  @media (max-width: 767px) {
+    font-size: 13px;
+  }
+}
+.team-img {
+  width: 315px;
+  height: auto;
+  max-width: 100%;
+  max-height: auto;
+}
+.team__soc-icon {
+  @media (max-width: 767px) {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+.team__soc-icon img {
+  width: 24px;
+  height: 24px;
+  max-width: 100%;
+  max-height: auto;
+  transition: all ease 222ms;
+  &:hover {
+    filter: invert(8%) sepia(100%) saturate(7267%) hue-rotate(18deg) brightness(91%) contrast(119%); 
+  transition: all ease 222ms;
+  }
+}
+.team__soc-icon li {
+  padding-left: 10px;
+}
+
+/****************************how_to_choose page*******************************************/
+
+.how_to_choose__list {
+  margin-left: 25px;
+  margin-bottom: 20px;
+  @media (max-width: 991px) {
+    margin-bottom: 10px;
+  }
+}
+.how_to_choose__list li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6; 
+  color: var(--black);
+  list-style-type: disc;
+  @media (max-width: 767px) {
+    font-size: 13px; 
+  }
+}
+
+/***************************broker reviews page*************************************/
+.broker-reviews__page {
+  padding-bottom: 110px;
+  @media (max-width: 991px) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 30px;
+  }
+  @media (max-width: 575px) {
+    padding-bottom: 10px;
+  }
+}
+.broker-reviews__image1 {
+  text-align: center;
+   @media (max-width: 575px) {
+    margin-top: 30px;
+  }
+}
+.broker-reviews__image1 img {
+  width: 510px;
+  height: auto;
+  max-width: 100%;
+  max-height: auto;
+ 
+}
+.select-option__reviews select {
+  width: 80%;
+  margin-bottom: 36px;
+  appearance: none;
+  overflow: hidden;
+  background: url('../img/select_img.svg') no-repeat right; 
+  background-size: 13px 8px;
+  @media (max-width: 991px) {
+    font-size: 18px;
+  }
+  @media (max-width: 575px) {
+    font-size: 18px; 
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.broker-partners-block__reviews {
+  min-height: 100%;
+}
+.broker__read-review {
+  margin-bottom: 15px;
+}
+.broker__read-review a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--black);
+  text-transform: uppercase;
+  transition: all ease 555ms;
+  &:hover {
+    color: var(--red);
+    text-decoration: none;
+  }
+}
+.broker-visit-site__reviews {
+  padding-top: 21px;
+}
+.broker-reviews__block-wrapper {
+  margin-bottom: 30px;
+}
+
+/********************Brokers with unlimited leverage page********************************/
+
+.broker-unlim-leverage__blocks {
+  padding-top: 44px;
+  padding-bottom: 60px;
+  @media (max-width: 991px) {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  @media (max-width: 575px) {
+    padding-bottom: 10px;
+  }
+}
+/***********************Interactive Brokers Review page**************************************/
+
+.review-subpage__logo-block {
+  display: flex;
+  justify-content: space-between;
+}
+.review-subpage__logo-block {
+  padding-bottom: 30px;
+}
+.review-subpage__logo-block img {
+  width: 236px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.review__content-bg, .review__second-content-bg {
+  background: #F9FAFB;
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  @media (max-width: 767px) {
+    padding: 20px;
+  }
+  @media (max-width: 350px) {
+    padding: 15px;  
+  }
+}
+.review__content-bg2 {
+  background: url(../img/like.svg)no-repeat;
+  background-position: left center;
+  background-size: 30px 30px;
+  padding-left: 60px;
+  min-height: 30px;
+  @media (max-width: 767px) {
+    padding-left: 50px;
+  }
+  @media (max-width: 350px) {
+    background-size: 20px;
+    padding-left: 40px;
+  }
+}
+.review__content-bg2 h5, .review__second-content-bg2 h5 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.review__second-content-bg2 {
+  background: url(../img/accept.svg)no-repeat;
+  background-position: left center;
+  background-size: 30px 30px;
+  padding-left: 60px;
+  min-height: 30px;
+  @media (max-width: 767px) {
+    padding-left: 50px;
+  }
+  @media (max-width: 350px) {
+    background-size: 20px;
+    padding-left: 40px;
+  }
+}
+.review__second-content-bg  {
+  margin-top: 10px;
+}
+.review__btn {
+  min-width: 220px;
+  height: 40px;
+}
+.review__content-block {
+  padding-bottom: 30px;
+}
+.review-content_column {
+  width: 48.5%;
+  background: #F9FAFB;
+  border-radius: 5px;
+  padding: 22px 40px 38px;
+  margin-top: 10px;
+  @media (max-width: 1279px) {
+    padding: 22px 20px 28px;
+  }
+  @media (max-width: 991px) {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 22px 40px 38px;
+  }
+}
+.review-content_column h4 {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+.column__green h4 {
+  color: #4BA64E;
+}
+.column__red h4 {
+  color: var(--red);
+}
+.column__green li  {
+  background: url(../img/green_dot.svg)no-repeat;
+}
+.column__red li  {
+  background: url(../img/red_dot.svg)no-repeat;
+}
+.review-content_column li {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 2.1;
+  background-position: left top 10px;
+  background-size: 8px;
+  padding-left: 18px;
+}
+
+
+/************************************FOOTER**************************************************/
 
 .footer__body {
   background: var(--black);
@@ -1336,6 +1658,10 @@ h3 {
   height: 24px;
   max-width: 100%;
   max-height: auto;
+  transition: all ease 555ms;
+  &:hover {
+   transform: scale(0.95);
+  }
 }
 .footer__soc-icon li a svg path{
   transition: all ease 555ms;
