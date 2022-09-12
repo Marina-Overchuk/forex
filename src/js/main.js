@@ -101,8 +101,8 @@ const partnersSlider = new Swiper('.partners-slider', {
 
   $('.broker-block__close').on('click', function() {
     $(this).parent().addClass('close');
-    $(p).filter(".broker-comparison__row").eq($(this).index()).hide;
-    
+    // $(p).filter(".broker-comparison__row").eq($(this).index()).hide();
+    $('p').hide()
 
   });
 
