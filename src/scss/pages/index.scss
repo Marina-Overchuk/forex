@@ -2012,6 +2012,12 @@ h3 {
   @media (max-width: 575px) {
     padding: 0px 5px;
   }
+  @media (max-width: 450px) {
+    font-size: 11px;
+  }
+  @media (max-width: 350px) {
+    font-size: 9px;
+  }
 }
 .broker__block__img {
   width: 146px;
