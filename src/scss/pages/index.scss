@@ -39,6 +39,12 @@ input,textarea,select,button:focus-visible {
 }
 @font-face {
   font-family: 'Raleway', sans-serif;
+  src: url(../fonts/Raleway-Bold.ttf);
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway', sans-serif;
   src: url(../fonts/Raleway-Black.ttf);
   font-weight: 900;
   font-display: swap;
@@ -349,6 +355,29 @@ h3 {
      background: var(--red);
      text-decoration: none;
      color: var(--white);
+    }
+}
+.button__red {
+  position: relative;
+  background: var(--red);
+  border-radius: 5px;
+  border: 1px solid var(--red);
+  text-align: center;
+  transition: all 0.555s ease;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-left: 10px;
+    &:hover {
+     background: transparent;
+     text-decoration: none;
+     color: var(--black);
+    }
+    @media (max-width: 575px) {
+      margin-left: auto;
+      margin-right: auto;
     }
 }
 .a__btn {
@@ -907,7 +936,7 @@ h3 {
  padding-bottom: 90px;
 }
 .education-title__body, .about-us-title__body, 
-.how_to_choose-title__body, .broker-reviews-title__body {
+.how_to_choose-title__body, .broker-reviews-title__body, .broker-comparison-title__body {
   padding-top: 160px;
   padding-bottom: 110px;
   @media (max-width: 991px){
@@ -1410,7 +1439,6 @@ h3 {
   height: auto;
   max-width: 100%;
   max-height: auto;
- 
 }
 .select-option__reviews select {
   width: 80%;
@@ -1577,8 +1605,390 @@ h3 {
   background-size: 8px;
   padding-left: 18px;
 }
+.review__features-highlights {
+  margin-top: 40px;
+}
+.review__subtitle {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.7;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+.review__features-highlights p {
+  padding-bottom: 8px;
+}
+.features-highlights__col-title, .features-highlights__col-content {
+  width: 50%;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+  padding: 8px 30px;
+  @media (max-width: 575px) {
+    padding: 8px 15px;
+  }
+}
+.features-highlights__content-bg {
+  background: #F9FAFB;
+}
+.review__btn2 {
+  width: 300px;
+  max-width: 300px;
+  @media (max-width: 575px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 350px) {
+    width: 280px;
+    max-width: 280px;
+  }
+}
+.features-highlights__btn {
+   margin-top: 30px;
+}
+.review__features-highlights-pb {
+  padding-bottom: 60px;
+}
+.fee__calculator {
+  background: #F9FAFB;
+  padding: 22px 40px 40px;
+  margin-bottom: 40px;
+}
+.fee__calculator h4 {
+  padding-bottom: 10px;
+}
+.fee__calculator p, .fee__table p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.form-calculate__block {
+  justify-content: space-between;
+}
+.form-calculate__block h6, .fee__table h6 {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+.form-calculate__block h6::after {
+  content: url("../img/icons-info.svg");
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  left: 4px;
+  top: 1px;
+} 
+.calculate__block {
+  width: 31%;
+  @media (max-width: 991px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.input__calculator {
+  border-bottom: 1px solid #CED6E0;
+  width: 100%;
+}
+.form-calculate__block input[type='number'] {
+  text-align: right;
+  width: 80%;
+  background: transparent;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--black);
+  padding-right: 20px;
+}
+.form-calculate__block input[type='number']::placeholder {
+  font-family: 'Raleway', sans-serif;
+  color: var(--black);
+  opacity: 1;
+}
+.form-calculate__block label {
+  color: #999999;
+}
+.select__option-fee select {
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid #CED6E0;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--black);
+  padding-right: 20px;
+}
+.select__option-fee select option{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.btn-sm-center {
+  @media (max-width: 575px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+.fee__table {
+  margin: 30px 0px;
+  background: #F1F2F6;
+  border-radius: 5px;
+  padding: 19px 30px;
+  margin-bottom: 40px;
+}
+.fee-table__block {
+  width: 25%;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (max-width: 575px) {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+.fees-snapshot__title {
+  background: #A4B0BE;
+  padding: 0px 30px;
+  border-radius: 5px;
+  @media (max-width: 400px) {
+    padding: 0px 10px;
+  }
+}
+.fees-snapshot__title p {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 5px;
+  @media (max-width: 400px) {
+    font-size: 12px;
+  }
+}
+.fees-snapshot__col-1 {
+ width: 25%;
+}
+.fees-snapshot__col-2 {
+  width: 12.5%;
+  @media (max-width: 991px) {
+    width: 20%;
+  }
+}
+.fees-snapshot__col-3 {
+  width: 62.5%;
+  @media (max-width: 991px) {
+    width: 55%;
+  }
+}
+.fees-snapshot__content {
+  padding: 0px 30px;
+  @media (max-width: 400px) {
+    padding: 0px 10px;
+  }
+}
+.fees-snapshot__content p {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 5px;
+  @media (max-width: 400px) {
+    font-size: 12px;
+  }
+}
+.fees-snapshot__bg {
+  background: #F9FAFB;
+  border-radius: 5px;
+}
+.review__fees-snapshot {
+  padding-bottom: 40px;
+}
+.review__paragraph p {
+  padding-bottom: 0;
+}
+.review__list {
+  padding-bottom: 20px;
+}
+.review__list li {
+  list-style: disc;
+  margin-left: 25px;
+}
+.review__faq h6 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  @media (max-width: 991px) {
+    font-size: 16px;
+  }
+}
+.review-subpage__page {
+  padding-bottom: 98px;
+  @media (max-width: 991px) {
+  padding-bottom: 40px;
+  }
+  @media (max-width: 767px) {
+  padding-bottom: 20px;
+  }
+  @media (max-width: 575px) {
+  padding-bottom: 0px;
+  }
+}
 
+/***************************Compare forex brokers page******************************************/
 
+.broker-comparison {
+  text-align: center;
+  @media (max-width: 575px) {
+    margin-top: 30px;
+  }
+}
+.broker-comparison img {
+  width: 453px;
+  height: auto;
+  max-width: 100%;
+  max-height: auto;
+}
+.broker__block {
+  background: #FFFFFF;
+  border: 1px solid #F1F2F4;
+  box-shadow: 0px 5px 30px #F1F2F4;
+  border-radius: 10px;
+  width: 19%;
+  padding: 40px 30px;
+  min-height: 100%;
+  @media (max-width: 991px) {
+   padding: 20px 15px;
+  }
+  @media (max-width: 575px) {
+    padding: 10px 5px;
+   }
+}
+.btn__broker-block {
+  margin-top: 30px;
+  margin-bottom: 24px;
+  max-width: 200px;
+  width: auto;
+  @media (max-width: 1279px) {
+    font-size: 10px;
+  }
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 575px) {
+    font-size: 8px;
+   }
+}
+.broker-block__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.close {
+  display: none;
+}
+/**************accordion********************/
+
+.broker-comparison__accordion .accordion-body {
+  background: transparent;
+  padding: 0px;
+  z-index: 5;
+  position: relative;
+  border-radius: 0;
+}
+.broker-comparison__accordion .accordion-item {
+  border-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+.broker-comparison__accordion code {
+    font-family: 'Raleway', sans-serif;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+  @media (max-width: 991px){
+    font-size: 12px;
+  }
+}
+.broker-comparison__accordion .accordion-button {
+  background: transparent;
+  font-family: 'Raleway', sans-serif;
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.7;
+  text-transform: uppercase;
+  border: 0;
+  padding: 0; 
+  padding-bottom: 10px;
+  border-radius: 0;
+}
+.broker-comparison__accordion .accordion-button:focus {
+  border: 0;
+  box-shadow: none;
+}
+.broker-comparison__accordion .accordion-button:not(.collapsed) {
+  color: var(--black);
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.7;
+  text-transform: uppercase;
+  box-shadow: none;
+  border: 0;
+  background: transparent;
+  padding: 0; 
+  padding-bottom: 10px;
+  border-radius: 0;
+}
+.broker-comparison__accordion .accordion-button::after {
+  transition: all ease 555ms;
+} 
+.broker-comparison__accordion .accordion-button:not(.collapsed)::after {
+  transition: all ease 555ms;
+  display: flex;
+  align-items: center;
+  background-image: url(../img/check_mark.svg);
+  transform: rotate(-180deg);
+} 
+.broker-comparison-row__wrapper {
+  text-align: left;
+  padding: 10px 0px;
+}
+.broker-comparison-row__wrapper-bg {
+  background: #F9FAFB;
+  border-radius: 5px; 
+}
+.broker-comparison-row__wrapper h6 {
+  padding-left: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+.broker-comparison__row p {
+  width: 19%;
+  padding-left: 30px;
+ 
+}
 /************************************FOOTER**************************************************/
 
 .footer__body {
@@ -1667,7 +2077,7 @@ h3 {
   transition: all ease 555ms;
 }
 .footer__soc-icon li a:hover svg path {
-    fill: var(--red);
+  fill: var(--red);
 }
 .footer__soc-icon li {
   padding-left: 10px;

@@ -1,0 +1,472 @@
+@@include('./templates/head.html')
+
+<body>
+    
+    @@include('./templates/header.html')
+
+    <div class="wrapper">
+        <main class="page"> 
+                       
+            <section class="broker-comparison__page bg__template" style="background-image: url(img/bg.png)">
+                <div class="broker-comparison-title__body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-sm-7 col-lg-6 align-self-center">
+                                <h5 class="name__page">Home  /  Compare forex brokers</h5> 
+                                <h1>Compare forex brokers</h1>
+                                <p class="education__title-block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lectus vel viverra laoreet. Sed maximus turpis eget massa rutrum consequat in fringilla enim.</p>
+                                <div class="select__option select-option__reviews"> 
+                                    <select id="selectBrokers" name="selectBrokers">
+                                        <option value="" class="selected__option" selected>Select Brokers</option>
+                                        <option value="broker_1">Broker 1</option>
+                                    </select> 
+                                </div> 
+                            </div>
+                            <div class="col-12 col-sm-5 col-lg-5 broker-comparison__image1 align-self-center">
+                                <img src="img/compare_brokers_img1.svg" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brokers__list text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="broker-block__wrapper">
+                                    <div class="broker__block">
+                                        <img src="img/interactive-brokers.png" alt="logo">
+                                        <a href="#" class="wrapper__button a__btn btn-center btn__broker-block">VISIT BROKER</a>
+                                        <img class="broker-block__close" src="img/close.svg" alt="close">
+                                    </div>
+                                    <div class="broker__block">
+                                        <img src="img/forex.png" alt="logo">
+                                        <a href="#" class="wrapper__button a__btn btn-center btn__broker-block">VISIT BROKER</a>
+                                        <img class="broker-block__close" src="img/close.svg" alt="close">
+                                    </div>
+                                    <div class="broker__block">
+                                        <img src="img/broker_reviews_logo4.png" alt="logo">
+                                        <a href="#" class="wrapper__button a__btn btn-center btn__broker-block">VISIT BROKER</a>
+                                        <img class="broker-block__close" src="img/close.svg" alt="close">
+                                    </div>
+                                    <div class="broker__block">
+                                        <img src="img/broker_reviews_logo5.png" alt="logo">
+                                        <a href="#" class="wrapper__button a__btn btn-center btn__broker-block">VISIT BROKER</a>
+                                        <img class="broker-block__close" src="img/close.svg" alt="close">
+                                    </div>
+                                    <div class="broker__block">
+                                        <img src="img/broker_reviews_logo9.png" alt="logo">
+                                        <a href="#" class="wrapper__button a__btn btn-center btn__broker-block">VISIT BROKER</a>
+                                        <img class="broker-block__close" src="img/close.svg" alt="close">
+                                    </div>
+                                </div>
+                                <div class="accordion broker-comparison__accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        Regulation      
+                                        </button>
+                                      </h2>
+                                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                        <div class="accordion-body">
+                                          <code>
+                                            <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                <h6>Trust Score</h6>
+                                                <div class="d-flex justify-content-between broker-comparison__row">
+                                                    <p>99</p>
+                                                    <p>99</p>
+                                                    <p>99</p>
+                                                    <p>87</p>
+                                                    <p>82</p>
+                                                </div>
+                                            </div>
+                                            <div class="broker-comparison-row__wrapper">
+                                                <h6>Year Founded</h6>
+                                                <div class="d-flex justify-content-between broker-comparison__row">
+                                                    <p>1974</p>
+                                                    <p>1989 </p>
+                                                    <p>1999</p>
+                                                    <p>2001</p>
+                                                    <p>2014</p>
+                                                </div>
+                                            </div>
+                                            <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                <h6>Publicly Traded (Listed)</h6>
+                                                <div class="d-flex justify-content-between broker-comparison__row">
+                                                    <p>Yes</p>
+                                                    <p>Yes</p>
+                                                    <p>Yes</p>
+                                                    <p>No</p>
+                                                    <p>No</p>
+                                                </div>
+                                            </div>
+                                            <div class="broker-comparison-row__wrapper">
+                                                <h6>Bank</h6>
+                                                <div class="d-flex justify-content-between broker-comparison__row">
+                                                    <p>Yes</p>
+                                                    <p>No</p>
+                                                    <p>No</p>
+                                                    <p>No</p>
+                                                    <p>No</p>
+                                                </div>
+                                            </div>
+                                            <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                <h6>Tier-1 Licenses</h6>
+                                                <div class="d-flex justify-content-between broker-comparison__row">
+                                                    <p>7</p>
+                                                    <p>5</p>
+                                                    <p>4</p>
+                                                    <p>2</p>
+                                                    <p>1</p>
+                                                </div>
+                                            </div>
+                                            <div class="broker-comparison-row__wrapper">
+                                                <h6>Tier-2 Licenses
+                                                    </h6>
+                                                <div class="d-flex justify-content-between broker-comparison__row">
+                                                    <p>2</p>
+                                                    <p>1</p>
+                                                    <p>2</p>
+                                                    <p>1</p>
+                                                    <p>2</p>
+                                                </div>
+                                            </div>
+                                            <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                <h6>Tier-3 Licenses</h6>
+                                                <div class="d-flex justify-content-between broker-comparison__row">
+                                                    <p>1</p>
+                                                    <p>0</p>
+                                                    <p>1</p>
+                                                    <p>0</p>
+                                                    <p>0</p>
+                                                </div>
+                                            </div>
+                                          </code>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                        Tier-1 Licenses (High Trust)
+                                        </button>
+                                      </h2>
+                                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                                        <div class="accordion-body">
+                                            <code>
+                                                <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                    <h6>ASIC Authorised (Australia)</h6>
+                                                    <div class="d-flex justify-content-between broker-comparison__row">
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                        <p>No</p>
+                                                        <p>Yes</p>
+                                                        <p>No</p>
+                                                    </div>
+                                                </div>
+                                                <div class="broker-comparison-row__wrapper">
+                                                    <h6>IIROC Authorised (Canada)</h6>
+                                                    <div class="d-flex justify-content-between broker-comparison__row">
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                    </div>
+                                                </div>
+                                                <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                    <h6>SFC Authorised (Hong Kong)</h6>
+                                                    <div class="d-flex justify-content-between broker-comparison__row">
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                        <p>No</p>
+                                                        <p>No</p>
+                                                    </div>
+                                                </div>
+                                                <div class="broker-comparison-row__wrapper">
+                                                    <h6>CBI Authorised (Ireland)</h6>
+                                                    <div class="d-flex justify-content-between broker-comparison__row">
+                                                        <p>Yes</p>
+                                                        <p>No</p>
+                                                        <p>No</p>
+                                                        <p>No</p>
+                                                        <p>No</p>
+                                                    </div>
+                                                </div>
+                                                <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                    <h6>FSA Authorised (Japan)</h6>
+                                                    <div class="d-flex justify-content-between broker-comparison__row">
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                        <p>No</p>
+                                                        <p>No</p>
+                                                        <p>No</p>
+                                                    </div>
+                                                </div>
+                                                <div class="broker-comparison-row__wrapper">
+                                                    <h6>MAS Authorised (Singapore)</h6>
+                                                    <div class="d-flex justify-content-between broker-comparison__row">
+                                                        <p>Yes</p>
+                                                        <p>No</p>
+                                                        <p>Yes</p>
+                                                        <p>No</p>
+                                                        <p>No</p>
+                                                    </div>
+                                                </div>
+                                                <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                    <h6>FINMA Authorised (Switzerland)</h6>
+                                                    <div class="d-flex justify-content-between broker-comparison__row">
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                        <p>No</p>
+                                                        <p>No</p>
+                                                        <p>Yes</p>
+                                                    </div>
+                                                </div>
+                                            </code>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                        Investments
+                                        </button>
+                                      </h2>
+                                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
+                                        <div class="accordion-body">
+                                            <code>
+                                                <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                    <h6>Forex Trading</h6>
+                                                    <div class="d-flex justify-content-between broker-comparison__row">
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                    </div>
+                                                </div>
+                                                <div class="broker-comparison-row__wrapper">
+                                                    <h6>Trading - Forex or CFDs</h6>
+                                                    <div class="d-flex justify-content-between broker-comparison__row">
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                    </div>
+                                                </div>
+                                                <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                    <h6>Tradeable Symbols (Total)</h6>
+                                                    <div class="d-flex justify-content-between broker-comparison__row">
+                                                        <p>19537</p>
+                                                        <p>11927</p>
+                                                        <p>5500</p>
+                                                        <p>8425</p>
+                                                        <p>87</p>
+                                                    </div>
+                                                </div>
+                                                <div class="broker-comparison-row__wrapper">
+                                                    <h6>Forex Pairs (Total)</h6>
+                                                    <div class="d-flex justify-content-between broker-comparison__row">
+                                                        <p>100</p>
+                                                        <p>158</p>
+                                                        <p>91</p>
+                                                        <p>50</p>
+                                                        <p>62</p>
+                                                    </div>
+                                                </div>
+                                                <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                    <h6>U.S. Stock Trading (Non CFD)</h6>
+                                                    <div class="d-flex justify-content-between broker-comparison__row">
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                        <p>No</p>
+                                                        <p>No</p>
+                                                        <p>Yes</p>
+                                                    </div>
+                                                </div>
+                                                <div class="broker-comparison-row__wrapper">
+                                                    <h6>Int'l Stock Trading (Non CFD)</h6>
+                                                    <div class="d-flex justify-content-between broker-comparison__row">
+                                                        <p>Yes</p>
+                                                        <p>No</p>
+                                                        <p>Yes</p>
+                                                        <p>No</p>
+                                                        <p>No</p>
+                                                    </div>
+                                                </div>
+                                                <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                    <h6>Social Trading / Copy Trading</h6>
+                                                    <div class="d-flex justify-content-between broker-comparison__row">
+                                                        <p>Yes</p>
+                                                        <p>Yes</p>
+                                                        <p>No</p>
+                                                        <p>No</p>
+                                                        <p>Yes</p>
+                                                    </div>
+                                                </div>
+                                                <div class="broker-comparison-row__wrapper">
+                                                    <h6>Disclaimers</h6>
+                                                    <div class="d-flex justify-content-between broker-comparison__row">
+                                                        <p>Note: Crypto CFDs are not available to retail traders from any broker's U.K. entity, nor to U.K. residents (except to Professional clients)</p>
+                                                        <p>Note: Crypto CFDs are not available to retail traders from any broker's U.K. entity, nor to U.K. residents (except to Professional clients).</p>
+                                                        <p>Note: Crypto CFDs are not available to retail traders from any broker's U.K. entity, nor to U.K. residents (except to Professional clients).</p>
+                                                        <p>Note: Crypto CFDs are not available to retail traders from any broker's U.K. entity, nor to U.K. residents (except to Professional clients).</p>
+                                                        <p>Note: Crypto CFDs are not available to retail traders from any broker's U.K. entity, nor to U.K. residents (except to Professional clients).</p>
+                                                    </div>
+                                                </div>
+                                            </code>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                          Cost
+                                          </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFour">
+                                          <div class="accordion-body">
+                                              <code>
+                                                  <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                      <h6>Average Spread EUR/USD - Standard</h6>
+                                                      <div class="d-flex justify-content-between broker-comparison__row">
+                                                          <p>0.828 (September 2021)</p>
+                                                          <p>0.73 (August 2021)</p>
+                                                          <p>1.1 (US August 2021)</p>
+                                                          <p>0.8 (July 2021)</p>
+                                                          <p>0.27 (September 2021)</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="broker-comparison-row__wrapper">
+                                                      <h6>All-in Cost EUR/USD - Active</h6>
+                                                      <div class="d-flex justify-content-between broker-comparison__row">
+                                                          <p>0.365 (May 2020)</p>
+                                                          <p>N/A</p>
+                                                          <p>1.1 (US August 2021)</p>
+                                                          <p>0.7 (July 2021)</p>
+                                                          <p>0.47 (September 2021)</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                      <h6>Active Trader or VIP Discounts</h6>
+                                                      <div class="d-flex justify-content-between broker-comparison__row">
+                                                          <p>Yes</p>
+                                                          <p>Yes</p>
+                                                          <p>Yes</p>
+                                                          <p>No</p>
+                                                          <p>No</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="broker-comparison-row__wrapper">
+                                                      <h6>Execution: Agency Broker</h6>
+                                                      <div class="d-flex justify-content-between broker-comparison__row">
+                                                          <p>Yes</p>
+                                                          <p>No</p>
+                                                          <p>No</p>
+                                                          <p>No</p>
+                                                          <p>No</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                      <h6>Execution: Market Maker</h6>
+                                                      <div class="d-flex justify-content-between broker-comparison__row">
+                                                          <p>Yes</p>
+                                                          <p>Yes</p>
+                                                          <p>No</p>
+                                                          <p>No</p>
+                                                          <p>Yes</p>
+                                                      </div>
+                                                  </div>
+                                              </code>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                            Funding
+                                          </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFive">
+                                          <div class="accordion-body">
+                                              <code>
+                                                  <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                      <h6>Minimum Initial Deposit</h6>
+                                                      <div class="d-flex justify-content-between broker-comparison__row">
+                                                          <p>£250.00</p>
+                                                          <p>$0</p>
+                                                          <p>$100</p>
+                                                          <p>$100</p>
+                                                          <p>$100</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="broker-comparison-row__wrapper">
+                                                      <h6>Bank Wire (Deposit/Withdraw)</h6>
+                                                      <div class="d-flex justify-content-between broker-comparison__row">
+                                                          <p>Yes</p>
+                                                          <p>Yes</p>
+                                                          <p>Yes</p>
+                                                          <p>Yes</p>
+                                                          <p>Yes</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                      <h6>Visa/Mastercard (Credit/Debit)</h6>
+                                                      <div class="d-flex justify-content-between broker-comparison__row">
+                                                            <p>Yes</p>
+                                                            <p>Yes</p>
+                                                            <p>Yes</p>
+                                                            <p>No</p>
+                                                            <p>No</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="broker-comparison-row__wrapper">
+                                                      <h6>PayPal (Deposit/Withdraw)</h6>
+                                                      <div class="d-flex justify-content-between broker-comparison__row">
+                                                          <p>Yes</p>
+                                                          <p>No</p>
+                                                          <p>No</p>
+                                                          <p>No</p>
+                                                          <p>No</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="broker-comparison-row__wrapper broker-comparison-row__wrapper-bg">
+                                                      <h6>Skrill (Deposit/Withdraw)</h6>
+                                                      <div class="d-flex justify-content-between broker-comparison__row">
+                                                          <p>Yes</p>
+                                                          <p>Yes</p>
+                                                          <p>No</p>
+                                                          <p>No</p>
+                                                          <p>Yes</p>
+                                                      </div>
+                                                  </div>
+                                              </code>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                               
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+                
+            </section> 
+            
+      
+        </main>
+    </div> 
+@@include('./templates/footer.html')
+
+
+  
+
+
+
+
+                       

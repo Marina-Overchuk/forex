@@ -97,6 +97,12 @@ const partnersSlider = new Swiper('.partners-slider', {
     
   });
   
+ //close broker-block
+ let block = ths.parents('.broker-block__close')
+  $('.broker-block__close').on('click', function() {
+    $(ths.parents('.broker-block__close')).addClass('close')
+
+  });
 
 })
 
