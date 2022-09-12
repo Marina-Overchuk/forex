@@ -1860,6 +1860,7 @@ h3 {
   max-height: auto;
 }
 .broker__block {
+  display: block;
   background: #FFFFFF;
   border: 1px solid #F1F2F4;
   box-shadow: 0px 5px 30px #F1F2F4;
@@ -1872,7 +1873,7 @@ h3 {
   }
   @media (max-width: 575px) {
     padding: 10px 5px;
-   }
+  }
 }
 .btn__broker-block {
   margin-top: 30px;
@@ -1890,7 +1891,7 @@ h3 {
   }
   @media (max-width: 575px) {
     font-size: 8px;
-   }
+  }
 }
 .broker-block__wrapper {
   display: flex;
@@ -1901,7 +1902,18 @@ h3 {
   display: none;
 }
 /**************accordion********************/
-
+.broker-comparison__page {
+  padding-bottom: 150px;
+  @media (max-width: 991px) {
+    padding-bottom: 80px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 60px;
+  }
+  @media (max-width: 575px) {
+    padding-bottom: 40px;
+  }
+}
 .broker-comparison__accordion .accordion-body {
   background: transparent;
   padding: 0px;
@@ -1983,11 +1995,23 @@ h3 {
   font-weight: 700;
   line-height: 1.8;
   margin-bottom: 0;
+  @media (max-width: 991px) {
+    padding: 0px 15px;
+  }
+   @media (max-width: 575px) {
+    padding: 0px 5px;
+  }
 }
 .broker-comparison__row p {
   width: 19%;
   padding-left: 30px;
- 
+  padding-right: 30px;
+  @media (max-width: 991px) {
+    padding: 0px 15px;
+  }
+  @media (max-width: 575px) {
+    padding: 0px 5px;
+  }
 }
 /************************************FOOTER**************************************************/
 
