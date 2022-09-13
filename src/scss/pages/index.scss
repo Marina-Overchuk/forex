@@ -95,7 +95,6 @@ h1 {
    @media (max-width: 575px) {
     font-size: 25px; 
   }
- 
 }
 h2 { 
   font-family: 'Raleway', sans-serif;
@@ -263,7 +262,6 @@ h3 {
     transform: scale(0);
   }
 }
-
 .container__header-right {
   width: 70%;
   display: flex;
@@ -303,7 +301,7 @@ h3 {
 .header-right__menu ul li {
   margin-left: 30px;
   @media (max-width: 1279px) {
-  margin-left: 15px;
+    margin-left: 15px;
   }
   @media (max-width: 991px) {
     margin-bottom: 25px;
@@ -317,7 +315,6 @@ h3 {
   text-decoration: none;
   color: var(--red);
 }
-
 .header-left__logo {
   width: 30%;
   margin-right: auto;
@@ -489,6 +486,7 @@ h3 {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.7;
+  transition: all ease 555ms;
   &:hover {
   text-decoration: none;
   color: var(--red);
@@ -877,11 +875,11 @@ h3 {
   border-radius: 10px;
 }
 .home__accordion code {
-    font-family: 'Raleway', sans-serif;
-    color: var(--black);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.6;
+  font-family: 'Raleway', sans-serif;
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
   @media (max-width: 991px){
     font-size: 12px;
   }
@@ -933,7 +931,7 @@ h3 {
 
 /*************************************EDUCATION PAGE***********************************************/
 .education__page {
- padding-bottom: 90px;
+  padding-bottom: 90px;
 }
 .education-title__body, .about-us-title__body, 
 .how_to_choose-title__body, .broker-reviews-title__body, .broker-comparison-title__body {
@@ -1025,7 +1023,7 @@ h3 {
   padding-bottom: 60px;
   @media (max-width: 575px){
     padding-bottom: 40px;
-   }
+  }
 }
 .education-blocks__body p {
   padding-top: 10px;
@@ -1037,7 +1035,7 @@ h3 {
   max-width: 100%;
   max-height: auto;
   @media (max-width: 767px){
-   margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -1072,11 +1070,11 @@ h3 {
     padding-top: 80px;
   }
 }
-.forex-basics__list, .review-subpage__list {
+.forex-basics__list, .review-subpage__list, .review-subpage__title-list {
   margin-left: 10%;
   @media (max-width: 767px){
-   margin-left: 0;
-   margin-bottom: 30px;
+    margin-left: 0;
+    margin-bottom: 30px;
   }
 }
 .forex-basics__list li, .review-subpage__list li {
@@ -1204,7 +1202,7 @@ h3 {
   padding-bottom: 10px;
 }
 .paragraph__padding {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
   @media (max-width: 991px){
     padding-bottom: 15px;
   }
@@ -1242,6 +1240,7 @@ h3 {
     padding-bottom: 10px;
   }
 }
+
 /**********************2 branches of analysis page*************************************************/
 
 .analysis__page p {
@@ -1269,6 +1268,7 @@ h3 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 /*************Forex trading fundamentals page, Social/copy trading page, asset Allocation page, profitable-strategy page*****************/
 
 .trading-fundamentals__page p, .sc-trading__block p,
@@ -1301,7 +1301,9 @@ h3 {
 .broker-unlim-leverage__text-block h3, .review__content-block h3 {
   padding-bottom: 10px;
 }
-
+.sc-trading__block img, .asset-allocation__block img {
+  margin-bottom: 20px;
+}
 /******************************profitable-strategy page********************************/
 .profitable-strategy__block img {
   margin-bottom: 30px;
@@ -1388,7 +1390,7 @@ h3 {
   transition: all ease 222ms;
   &:hover {
     filter: invert(8%) sepia(100%) saturate(7267%) hue-rotate(18deg) brightness(91%) contrast(119%); 
-  transition: all ease 222ms;
+    transition: all ease 222ms;
   }
 }
 .team__soc-icon li {
@@ -1416,6 +1418,7 @@ h3 {
 }
 
 /***************************broker reviews page*************************************/
+
 .broker-reviews__page {
   padding-bottom: 110px;
   @media (max-width: 991px) {
@@ -1499,9 +1502,7 @@ h3 {
 .review-subpage__logo-block {
   display: flex;
   justify-content: space-between;
-}
-.review-subpage__logo-block {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 .review-subpage__logo-block img {
   width: 236px;
@@ -1695,7 +1696,7 @@ h3 {
 }
 .form-calculate__block input[type='number'] {
   text-align: right;
-  width: 80%;
+  width: 85%;
   background: transparent;
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
@@ -1703,6 +1704,9 @@ h3 {
   line-height: 1.6;
   color: var(--black);
   padding-right: 20px;
+  @media (max-width: 1279px) {
+    width: 80%;
+  }
 }
 .form-calculate__block input[type='number']::placeholder {
   font-family: 'Raleway', sans-serif;
@@ -1835,14 +1839,17 @@ h3 {
 .review-subpage__page {
   padding-bottom: 98px;
   @media (max-width: 991px) {
-  padding-bottom: 40px;
+    padding-bottom: 40px;
   }
   @media (max-width: 767px) {
-  padding-bottom: 20px;
+    padding-bottom: 20px;
   }
   @media (max-width: 575px) {
-  padding-bottom: 0px;
+    padding-bottom: 0px;
   }
+}
+.review-subpage__title-list {
+  padding-bottom: 10px;
 }
 
 /***************************Compare forex brokers page******************************************/
@@ -1931,11 +1938,11 @@ h3 {
   border-radius: 0;
 }
 .broker-comparison__accordion code {
-    font-family: 'Raleway', sans-serif;
-    color: var(--black);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.6;
+  font-family: 'Raleway', sans-serif;
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
   @media (max-width: 991px){
     font-size: 12px;
   }
@@ -2025,6 +2032,7 @@ h3 {
   max-width: 100%;
   max-height: auto;
 }
+
 /************************************FOOTER**************************************************/
 
 .footer__body {
@@ -2189,53 +2197,50 @@ h3 {
 /** animation**/
 
 #screen_2 {
+animation: screen2  1s linear alternate;
+transform-origin: center;
+transform-box: fill-box;
+animation-delay: 0.5s;
+}
+@keyframes screen2 {
+  from {
+    transform: scale(0);
+    }
+  to {
+    transform: scale(1);
+    }
+}
 
-    animation: screen2  1s linear alternate;
-    transform-origin: center;
-    transform-box: fill-box;
-    animation-delay: 0.5s;
-  }
-    @keyframes screen2 {
-      from {
-        transform: scale(0);
-        }
-      to {
-        transform: scale(1);
-        }
-  }
+#screen_1 {
 
+animation: screen1  1s linear alternate;
+transform-origin: center;
+transform-box: fill-box;
+animation-delay: 1s;
+}
+@keyframes screen1 {
+  from {
+    transform: scale(0);
+    }
+  to {
+    transform: scale(1);
+    }
+}
 
-  #screen_1 {
+#dollar {
 
-    animation: screen1  1s linear alternate;
-    transform-origin: center;
-    transform-box: fill-box;
-    animation-delay: 1s;
-  }
-    @keyframes screen1 {
-      from {
-        transform: scale(0);
-        }
-      to {
-        transform: scale(1);
-        }
-  
-   }
-   #dollar {
-
-    animation: dollar  1.5s linear alternate infinite;
-    transform-origin: center;
-    transform-box: fill-box;
-   }
-    @keyframes dollar {
-      from {
-        transform: rotateY(0);
-        }
-      to {
-        transform: rotateY(30deg);
-        }
-  
-   }
+animation: dollar  1.5s linear alternate infinite;
+transform-origin: center;
+transform-box: fill-box;
+}
+@keyframes dollar {
+  from {
+    transform: rotateY(0);
+    }
+  to {
+    transform: rotateY(30deg);
+    }
+}
 
 /*******************HOME 2*************************/
 
