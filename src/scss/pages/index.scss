@@ -136,7 +136,6 @@ h3 {
 /*--------------------*/
 .wrapper {
   width: 100%;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -672,11 +671,11 @@ h3 {
   background: #FFFFFF;
   border: 1px solid #F1F2F4;
   box-shadow: 0px 5px 30px #F1F2F4;
-  border-radius: 10px; 
-  min-height: 600px;
+  border-radius: 10px;
+  min-height: 550px; 
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   @media (max-width: 1279px) {
     padding: 25px 20px;
   }
@@ -685,7 +684,6 @@ h3 {
   }
 }
 .broker__visit-site {
-  margin-top: auto;
   padding-top: 56px;
 }
 .broker__visit-site p {
@@ -1041,15 +1039,15 @@ h3 {
 
 /*******************FOREX BASICS PAGE**********************************/
 .forex-basics__page {
-  padding-bottom: 94px;
+  padding-bottom: 144px;
   @media (max-width: 991px){
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
   @media (max-width: 767px){
-    padding-bottom: 20px;
+    padding-bottom: 60px;
   }
   @media (max-width: 575px){
-    padding-bottom: 0px;
+    padding-bottom: 40px;
   }
 }
 .forex-basics-title__body, .trading-tips-title__body, 
@@ -1070,8 +1068,17 @@ h3 {
     padding-top: 80px;
   }
 }
+.forex-basics-list__wrapper {
+  position: relative;
+}
+.forex-basics__list  {
+  position: sticky;
+  top: 100px;
+}
 .forex-basics__list, .review-subpage__list, .review-subpage__title-list {
-  margin-left: 10%;
+  @media (max-width: 991px){
+    margin-left: 10%;
+  }
   @media (max-width: 767px){
     margin-left: 0;
     margin-bottom: 30px;
@@ -1084,6 +1091,10 @@ h3 {
   background-size: 9px;
   @media (max-width: 1279px){
     margin-bottom: 10px;
+    background-position: left top 8px;
+  }
+  @media (max-width: 767px){
+    background-position: left center;
   }
 }
 .forex-basics__list li a, .review-subpage__list li a {
@@ -1105,11 +1116,16 @@ h3 {
   }
 }
 .forex-basics__block {
-  padding-bottom: 60px;
+  padding-top: 60px;
   @media (max-width: 991px){
-    padding-bottom: 40px;
+    padding-top: 40px;
   }
 }
+.forex-basics-block__wrapper div:first-child {
+  padding-top: 0px;
+}
+
+
 .forex-basics__block p {
   @media (max-width: 991px){
     text-align: justify;
@@ -1503,12 +1519,19 @@ h3 {
   display: flex;
   justify-content: space-between;
   padding-bottom: 40px;
+  @media (max-width: 575px) {
+    display: block;
+    text-align: center;
+  }
 }
 .review-subpage__logo-block img {
   width: 236px;
   height: auto;
   max-width: 100%;
   max-height: 100%;
+  @media (max-width: 575px) {
+   margin-bottom: 20px;
+  }
 }
 .review__content-bg, .review__second-content-bg {
   background: #F9FAFB;
@@ -1875,8 +1898,10 @@ h3 {
   width: 19%;
   padding: 40px 30px;
   min-height: 100%;
+  margin: 0 15px;
   @media (max-width: 991px) {
    padding: 20px 15px;
+   margin: 0 5px;
   }
   @media (max-width: 575px) {
     padding: 10px 5px;
@@ -1898,15 +1923,14 @@ h3 {
   }
   @media (max-width: 575px) {
     font-size: 8px;
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
 }
 .broker-block__wrapper {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 60px;
-}
-.close {
-  display: none;
+  justify-content: start;
 }
 /**************accordion********************/
 .broker-comparison__page {
@@ -1937,7 +1961,7 @@ h3 {
   box-shadow: none;
   border-radius: 0;
 }
-.broker-comparison__accordion code {
+.broker-comparison__accordion .accordion-body {
   font-family: 'Raleway', sans-serif;
   color: var(--black);
   font-size: 14px;
@@ -1992,38 +2016,57 @@ h3 {
   text-align: left;
   padding: 10px 0px;
 }
-.broker-comparison-row__wrapper-bg {
-  background: #F9FAFB;
-  border-radius: 5px; 
-}
 .broker-comparison-row__wrapper h6 {
-  padding-left: 30px;
+  padding-left: 15px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.8;
-  margin-bottom: 0;
+  margin: 0 15px;
   @media (max-width: 991px) {
     padding: 0px 15px;
+    margin: 0 5px;
   }
    @media (max-width: 575px) {
     padding: 0px 5px;
   }
 }
+.broker-comparison-row__wrapper {
+  &:nth-child(odd){
+    background: #F9FAFB;
+    border-radius: 5px;
+  }
+}
+.broker-comparison__row {
+  display: flex;
+  justify-content: start;
+}
 .broker-comparison__row p {
   width: 19%;
   padding-left: 30px;
   padding-right: 30px;
+  margin: 0 15px;
   @media (max-width: 991px) {
     padding: 0px 15px;
+    margin: 0 5px;
   }
   @media (max-width: 575px) {
     padding: 0px 5px;
-  }
-  @media (max-width: 450px) {
     font-size: 11px;
   }
-  @media (max-width: 350px) {
+  @media (max-width: 400px) {
     font-size: 9px;
+  }
+}
+.broker-comparison__row p:first-child {
+  padding-left: 15px;
+  @media (max-width: 575px) {
+    padding-left: 5px;
+  }
+}
+.broker-comparison__row p:last-child {
+  padding-right: 15px;
+  @media (max-width: 575px) {
+    padding-right: 5px;
   }
 }
 .broker__block__img {
@@ -2306,4 +2349,6 @@ text-align: center;
   }
 }
 
-
+.hh {
+  transition: all ease 1000ms;
+}
