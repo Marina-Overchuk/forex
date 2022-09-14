@@ -970,13 +970,25 @@ h3 {
     padding-bottom: 40px;
   }
 }
-.name__page {
+.breadcrumbs {
+  padding-bottom: 20px;
+}
+.breadcrumbs__link, .breadcrumbs__current, .breadcrumbs__separator {
   font-size: 13px;
   font-weight: 600;
   line-height: 1.5;
   color: #999999;
   text-transform: uppercase;
-  padding-bottom: 20px;
+}
+.breadcrumbs__link {
+  transition: all ease 555ms;
+  &:hover {
+  text-decoration: none;
+  color: var(--red);
+  }
+}
+.breadcrumbs__separator {
+  padding: 0 2px;
 }
 .education__title-block-text {
   font-size: 16px;
@@ -1975,6 +1987,7 @@ h3 {
     font-size: 8px;
     margin-top: 10px;
     margin-bottom: 15px;
+   padding: 2px 5px; 
   }
   @media (max-width: 400px) {
     margin-top: 5px;  
