@@ -1933,6 +1933,18 @@ h3 {
   }
 }
 
+.popover-header {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--black);
+  font-family: 'Raleway', sans-serif;
+  background: var(--white);
+  text-transform: lowercase;
+}
+.calculate__block button {
+  background: transparent;
+}
 /***************************Compare forex brokers page******************************************/
 
 .broker-comparison {

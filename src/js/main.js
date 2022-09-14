@@ -108,28 +108,12 @@ $(document).ready(function () {
   });
 
 
-// header-scroll
+// calculate
 
 
 
-// function stickyScroll(params) {
-
-//   let scroll = $(window).scrollTop();
-
-//   if (scroll >= scrollChange) {
-//     $('.forex-basics__list').addClass('forex-basics-list__fixed');
-
-//   } else {
-//     $('.forex-basics__list').removeClass('forex-basics-list__fixed');
-
-//   }
-// }
-
-// $(document).on('scroll', () => {
-//   stickyScroll();
-// })
-
-// stickyScroll();
-
+$(function() {
+	$('[data-toggle="popover"]').popover()
+})
 
 })

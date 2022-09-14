@@ -226,10 +226,12 @@
                                         <p>Having trouble calculating the commission fee of your trade? Check out our brokerage fee calculator and see how much it would be when trading stocks.
                                         </p>
                                         
-                                        <form action="#" method="post" class="form__calculate">
+                                        <div class="form__calculate">
                                              <div class="d-block d-lg-flex form-calculate__block">
                                                 <div class="calculate__block">
-                                                    <h6>Amount</h6>
+                                                  
+                                                  <button type="button" data-toggle="popover" title="Popover text"><h6>Amount</h6></button>
+                                                                                              
                                                     <div class="input__calculator">
                                                         <input type="number" id="amount" name="amount" placeholder="10.00" min="0">
                                                         <label for="amount">USD</label>
@@ -237,7 +239,8 @@
                                                 </div>
 
                                                 <div class="calculate__block">
-                                                    <h6>Shares</h6>
+                                                    
+                                                    <button type="button" data-toggle="popover" title="Popover 2 text"><h6>Sharest</h6></button>
                                                     <div class="select__option-fee"> 
                                                         <select id="selectFee" name="selectFee">
                                                             <option value="option1_fee" selected>AMC Entertaiment Holding...</option>
@@ -247,9 +250,9 @@
                                                 </div>
                                                 
                                                 <div class="calculate__block">
-                                                    <h6>Stock price</h6>
+                                                    <button type="button" data-toggle="popover" title="Popover 3 text"><h6>Stock price</h6></button>
                                                     <div class="input__calculator">
-                                                        <input type="number" id="stock-price" name="stock-price" placeholder="9.20" min="0">
+                                                        <p></p>
                                                         <label for="stock-price">USD</label>
                                                     </div> 
                                                 </div>
@@ -277,7 +280,7 @@
                                                 <a href="#" class="wrapper__button a__btn btn-sm-center">VISIT BROKER</a>
                                                 <button type="submit" class="button__red a__btn">CALCULATE</button>
                                             </div>
-                                        </form>
+                                        </div>
                                     </div>
                                     <div class="review__fees-snapshot">
                                         <h4 class="review__subtitle">Interactive Brokers fees snapshot</h4>
