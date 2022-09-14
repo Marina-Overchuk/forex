@@ -162,7 +162,7 @@ h3 {
   padding-left: 10px;
   padding-right: 10px;
 }
-.header a {
+.header-right__menu ul li a {
   color: var(--black);
   font-size: 13px;
   font-weight: 600;
@@ -170,10 +170,14 @@ h3 {
   text-transform: uppercase;
   transition: all ease 555ms;
   @media (max-width: 1279px) {
-    font-size: 11px;
+    font-size: 10px;
   }
   @media (max-width: 991px) {
     font-size: 13px;
+  }
+  &:hover {
+     text-decoration: none;
+     color: var(--red);
   }
 }
 .header_scroll { 
@@ -265,6 +269,9 @@ h3 {
   width: 70%;
   display: flex;
   justify-content: flex-end;
+  @media (max-width: 1279px) {
+    width: 80%;
+  }
   @media (max-width: 991px) {
     display: flex;
     justify-content: flex-end; 
@@ -273,16 +280,16 @@ h3 {
 }
 .header-right__menu {
   @media (max-width: 991px) { 
-  position: fixed;
-  transition: all 555ms ease;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 6;
-  padding-top: 100px;
-  // display: none;
-  overflow: auto;
+    position: fixed;
+    transition: all 555ms ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    padding-top: 100px;
+    // display: none;
+    overflow: auto;
   }
 }
 .header-right__menu ul {
@@ -310,13 +317,16 @@ h3 {
     margin-bottom: 20px;
   }   
 }
-.header-right__menu ul li a:hover {
-  text-decoration: none;
-  color: var(--red);
-}
+
 .header-left__logo {
   width: 30%;
   margin-right: auto;
+  @media (max-width: 1279px) {
+    width: 20%;
+  }
+  @media (max-width: 991px) {
+    width: 30%;
+  }
   @media (max-width: 575px) {
     width: 40%;
   }
@@ -504,6 +514,12 @@ h3 {
   background-size: 9px;
   @media (max-width: 575px) {
     background-size: 7px;
+  }
+}
+.select-option__home {
+  @media (max-width: 575px) {
+    font-size: 14px;
+    margin-bottom: 40px;
   }
 }
 .select__option select {
@@ -930,7 +946,13 @@ h3 {
 /*************************************EDUCATION PAGE***********************************************/
 .education__page {
   padding-bottom: 90px;
-}
+  @media (max-width: 991px){
+    padding-bottom: 20px;
+  }
+  @media (max-width: 767px){
+    padding-bottom: 0px;
+  }
+ }
 .education-title__body, .about-us-title__body, 
 .how_to_choose-title__body, .broker-reviews-title__body, .broker-comparison-title__body {
   padding-top: 160px;
@@ -1329,7 +1351,12 @@ h3 {
 }
 
 /**********************************About US PAGE**********************************************/
-
+.about-us-text__padding, .choose-text__padding {
+  padding-bottom: 0;
+  @media (max-width: 575px) {
+    padding-bottom: 20px;
+  }
+}
 .about_us__image1, .how_to_choose__image {
   text-align: center;
 }
@@ -1584,6 +1611,10 @@ h3 {
 .review__btn {
   min-width: 220px;
   height: 40px;
+  @media (max-width: 400px) {
+    max-width: 200px;
+    min-width: 100px;
+  }
 }
 .review__content-block {
   padding-bottom: 30px;
@@ -1730,6 +1761,18 @@ h3 {
   @media (max-width: 1279px) {
     width: 80%;
   }
+  @media (max-width: 991px) {
+    width: 87%;
+  }  
+  @media (max-width: 767px) {
+    width: 92%;
+  }
+  @media (max-width: 575px) {
+    width: 88%;
+  }  
+  @media (max-width: 400px) {
+    width: 80%;
+  }
 }
 .form-calculate__block input[type='number']::placeholder {
   font-family: 'Raleway', sans-serif;
@@ -1873,6 +1916,9 @@ h3 {
 }
 .review-subpage__title-list {
   padding-bottom: 10px;
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+  }
 }
 
 /***************************Compare forex brokers page******************************************/
@@ -1906,6 +1952,10 @@ h3 {
   @media (max-width: 575px) {
     padding: 10px 5px;
   }
+  @media (max-width: 400px) {
+    padding: 10px 4px;
+    margin: 0 2.5px
+  }
 }
 .btn__broker-block {
   margin-top: 30px;
@@ -1926,6 +1976,10 @@ h3 {
     margin-top: 10px;
     margin-bottom: 15px;
   }
+  @media (max-width: 400px) {
+    margin-top: 5px;  
+    font-size: 7px;
+  }
 }
 .broker-block__wrapper {
   display: flex;
@@ -1934,15 +1988,12 @@ h3 {
 }
 /**************accordion********************/
 .broker-comparison__page {
-  padding-bottom: 150px;
+  padding-bottom: 90px;
   @media (max-width: 991px) {
-    padding-bottom: 80px;
+    padding-bottom: 20px;
   }
   @media (max-width: 767px) {
-    padding-bottom: 60px;
-  }
-  @media (max-width: 575px) {
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
 }
 .broker-comparison__accordion .accordion-body {
@@ -1960,6 +2011,9 @@ h3 {
   border: none;
   box-shadow: none;
   border-radius: 0;
+  @media (max-width: 575px) {
+    margin-bottom: 40px;
+  }
 }
 .broker-comparison__accordion .accordion-body {
   font-family: 'Raleway', sans-serif;
@@ -2046,8 +2100,9 @@ h3 {
   padding-right: 30px;
   margin: 0 15px;
   @media (max-width: 991px) {
-    padding: 0px 15px;
+    padding: 0px 5px;
     margin: 0 5px;
+    text-align: center;
   }
   @media (max-width: 575px) {
     padding: 0px 5px;
@@ -2055,17 +2110,19 @@ h3 {
   }
   @media (max-width: 400px) {
     font-size: 9px;
+    padding: 10px 4px;
+    margin: 0 2.5px
   }
 }
 .broker-comparison__row p:first-child {
   padding-left: 15px;
-  @media (max-width: 575px) {
+  @media (max-width: 991px) {
     padding-left: 5px;
   }
 }
 .broker-comparison__row p:last-child {
   padding-right: 15px;
-  @media (max-width: 575px) {
+  @media (max-width: 991px) {
     padding-right: 5px;
   }
 }
@@ -2075,7 +2132,26 @@ h3 {
   max-width: 100%;
   max-height: auto;
 }
-
+.text-accordion__left p {
+  @media (max-width: 991px) {
+    text-align: left;
+  }
+  @media (max-width: 575px) {
+    font-size: 7px;
+    padding: 0 2px;
+  }
+}
+.text-accordion__left p:first-child {
+  @media (max-width: 991px) {
+    padding-left: 5px;
+  }
+  
+}
+.text-accordion__left p:last-child {
+  @media (max-width: 991px) {
+   padding-right: 5px;
+  }
+}
 /************************************FOOTER**************************************************/
 
 .footer__body {
@@ -2349,6 +2425,3 @@ text-align: center;
   }
 }
 
-.hh {
-  transition: all ease 1000ms;
-}
