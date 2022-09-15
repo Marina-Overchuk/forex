@@ -1031,6 +1031,9 @@ h3 {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.7;
+  @media (max-width: 575px){
+    font-size: 16px;
+  }
 }
 .education__input-search input::placeholder {
   color: var(--black);
@@ -1038,6 +1041,9 @@ h3 {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.7;
+  @media (max-width: 575px){
+    font-size: 16px;
+  }
 }
 .input-search__wrapper {
   display: flex;
@@ -1509,7 +1515,7 @@ h3 {
     font-size: 18px;
   }
   @media (max-width: 575px) {
-    font-size: 18px; 
+    font-size: 16px; 
     width: 100%;
     margin-bottom: 20px;
   }
@@ -1696,6 +1702,14 @@ h3 {
     padding: 8px 15px;
   }
 }
+.features-highlights__content  {
+   
+    &:nth-child(even){
+      background: #F9FAFB;
+      border-radius: 5px;
+    }
+  }
+
 .features-highlights__content-bg {
   background: #F9FAFB;
 }
@@ -1730,7 +1744,9 @@ h3 {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.6;
+  
 }
+
 .form-calculate__block {
   justify-content: space-between;
 }
@@ -1760,7 +1776,7 @@ h3 {
   border-bottom: 1px solid #CED6E0;
   width: 100%;
 }
-.form-calculate__block input[type='number'] {
+.form-calculate__block input[type='number'], .stock__price {
   text-align: right;
   width: 85%;
   background: transparent;
@@ -1781,6 +1797,8 @@ h3 {
   }
   @media (max-width: 575px) {
     width: 88%;
+    font-size: 16px;
+    padding-right: 10px;
   }  
   @media (max-width: 400px) {
     width: 80%;
@@ -1790,6 +1808,17 @@ h3 {
   font-family: 'Raleway', sans-serif;
   color: var(--black);
   opacity: 1;
+}
+.input__calculator p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #999999;
+  padding-bottom: 8px;
+  @media (max-width: 575px) {
+    font-size: 16px;
+  } 
 }
 .form-calculate__block label {
   color: #999999;
@@ -1804,11 +1833,17 @@ h3 {
   line-height: 1.6;
   color: var(--black);
   padding-right: 20px;
+  @media (max-width: 575px) {
+    font-size: 16px;
+  } 
 }
 .select__option-fee select option{
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
+  @media (max-width: 575px) {
+    font-size: 16px;
+  } 
 }
 .btn-sm-center {
   @media (max-width: 575px) {
@@ -1829,6 +1864,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-right: 5px;
   @media (max-width: 575px) {
     flex-direction: row;
     width: 100%;
@@ -1937,7 +1973,7 @@ h3 {
   font-size: 10px;
   font-weight: 400;
   line-height: 1.6;
-  color: var(--black);
+  color: #000000;
   font-family: 'Raleway', sans-serif;
   background: var(--white);
   text-transform: lowercase;
@@ -2235,6 +2271,9 @@ h3 {
   }
   @media (max-width: 1279px) {
     font-size: 10px;
+  }
+  @media (max-width: 767px) {
+    font-size: 9px;
   }
   @media (max-width: 575px) {
     font-size: 13px;

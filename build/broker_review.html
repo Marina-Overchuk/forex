@@ -148,7 +148,7 @@
                                     <div class="review__features-highlights review__features-highlights-pb">
                                         <h4 class="review__subtitle ">Interactive Brokers main features and highlights</h4>
                                         <div class="features-highlights__content">
-                                            <div class="d-flex features-highlights__content-bg">
+                                            <div class="d-flex ">
                                                 <p class="features-highlights__col-title">Country of regulation</p>
                                                 <p class="features-highlights__col-content">USA, Ireland, UK, Hungary, India, Australia, Canada, Japan, Hong Kong, Singapore</p>
                                             </div>
@@ -160,7 +160,7 @@
                                             </div>
                                         </div>
                                         <div class="features-highlights__content">
-                                            <div class="d-flex features-highlights__content-bg">
+                                            <div class="d-flex">
                                                 <p class="features-highlights__col-title">Inactivity fee charged</p>
                                                 <p class="features-highlights__col-content">No</p>
                                             </div>
@@ -172,7 +172,7 @@
                                             </div>
                                         </div>
                                         <div class="features-highlights__content">
-                                            <div class="d-flex features-highlights__content-bg">
+                                            <div class="d-flex">
                                                 <p class="features-highlights__col-title">Minimum deposit</p>
                                                 <p class="features-highlights__col-content">$0</p>
                                             </div>
@@ -184,7 +184,7 @@
                                             </div>
                                         </div>
                                         <div class="features-highlights__content">
-                                            <div class="d-flex features-highlights__content-bg">
+                                            <div class="d-flex">
                                                 <p class="features-highlights__col-title">Deposit with bank card</p>
                                                 <p class="features-highlights__col-content">Not available</p>
                                             </div>
@@ -196,7 +196,7 @@
                                             </div>
                                         </div>
                                         <div class="features-highlights__content">
-                                            <div class="d-flex features-highlights__content-bg">
+                                            <div class="d-flex">
                                                 <p class="features-highlights__col-title">Number of base currencies supported</p>
                                                 <p class="features-highlights__col-content">23</p>
                                             </div>
@@ -208,7 +208,7 @@
                                             </div>
                                         </div>
                                         <div class="features-highlights__content">
-                                            <div class="d-flex features-highlights__content-bg">
+                                            <div class="d-flex">
                                                 <p class="features-highlights__col-title">Products offered</p>
                                                 <p class="features-highlights__col-content">Stock, ETF, Forex, Fund, Bond, Options, Futures, CFD, Crypto, Warrants, Structured Products</p>
                                             </div>
@@ -243,42 +243,42 @@
                                                     <button type="button" data-toggle="popover" title="Popover 2 text"><h6>Sharest</h6></button>
                                                     <div class="select__option-fee"> 
                                                         <select id="selectFee" name="selectFee">
-                                                            <option value="option1_fee" selected>AMC Entertaiment Holding...</option>
-                                                            <option value="option2_fee">...2...</option>
+                                                            <option value="9.20" selected >AMC Entertaiment Holding...</option>
+                                                            <option value="11.20">...2...</option>
                                                         </select>
                                                     </div> 
                                                 </div>
                                                 
                                                 <div class="calculate__block">
                                                     <button type="button" data-toggle="popover" title="Popover 3 text"><h6>Stock price</h6></button>
-                                                    <div class="input__calculator">
-                                                        <p></p>
-                                                        <label for="stock-price">USD</label>
+                                                    <div class="input__calculator d-flex">
+                                                        <span class="stock__price">9.20</span>
+                                                        <p>USD</p>
                                                     </div> 
                                                 </div>
                                             </div>
                                             <div class="fee__table d-block d-sm-flex">
                                                 <div class="fee-table__block">
                                                 <h6>FEE, $</h6> 
-                                                <p>$ 0.09</p>
+                                                <p>$ <span id="fee__1">0.09</span></p>
                                                 </div>
                                                 <div class="fee-table__block">
                                                     <h6>FEE, %</h6> 
-                                                    <p>1.00 %</p>
+                                                    <p><span id="fee__const">1.00</span> %</p>
                                                 </div>
-                                                <div class="fee-table__block">
+                                                <div class="fee-table__block ">
                                                     <h6>Number of shares</h6> 
-                                                    <p>1</p>
+                                                    <p><span id="number__shares">1</span></p>
                                                 </div>
                                                 <div class="fee-table__block">
                                                     <h6>Net investment</h6> 
-                                                    <p>$ 9.00</p>
+                                                    <p>$ <span id="net__investment">9.00</span></p>
                                                 </div>
                                             </div>
 
                                             <div class="d-block d-sm-flex justify-content-center fee__btn">
                                                 <a href="#" class="wrapper__button a__btn btn-sm-center">VISIT BROKER</a>
-                                                <button type="submit" class="button__red a__btn">CALCULATE</button>
+                                                <button type="submit" class="button__red a__btn calculate">CALCULATE</button>
                                             </div>
                                         </div>
                                     </div>

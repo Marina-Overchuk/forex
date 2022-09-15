@@ -107,11 +107,33 @@ $(document).ready(function () {
 
   });
 
+//calculate
 
-// calculate
+let select = document.getElementById('selectFee');
+let sharest;
+select.addEventListener('change', function(){  
+  sharest = this.value;
+  document.querySelector('.stock__price').innerHTML = Number(sharest).toFixed(2);
+});
+
+$('.calculate').on('click', function () {
+
+  let val = document.getElementById('amount').value;
+  
+  let number = document.getElementById('number__shares')
+  .innerHTML = Math.round(+val / sharest);
+
+  let netInvestment = document.getElementById('net__investment');
+  netInvestment.innerHTML = (Number(Math.round(number * sharest)).toFixed(2));
+
+  let feeConst = Number(document.getElementById('fee__const').innerText);
+
+  document.getElementById('fee__1').innerHTML = (Number(netInvestment.innerText) * feeConst) / 100;
+
+});
 
 
-
+//popover
 $(function() {
 	$('[data-toggle="popover"]').popover()
 })
