@@ -212,15 +212,18 @@ h3 {
     width: 30px;
     height: 20px;
     z-index: 101;
+   
   }
 }
 .header__burger:before,
 .header__burger:after {
+  transition: all ease 300ms;
   @media (max-width: 991px) {
     background-color: var(--black);
   }
 }
 .header__burger span {
+  transition: all ease 300ms;
   @media (max-width: 991px) {
     background-color: var(--black);
   }
@@ -256,10 +259,12 @@ h3 {
   .header__burger.active:before {
     transform: rotate(45deg);
     top: 9px;
+    width: 80%;
   }
   .header__burger.active:after {
     transform: rotate(-45deg);
     top: 9px;
+    width: 80%;
   }
   .header__burger.active span {
     transform: scale(0);
