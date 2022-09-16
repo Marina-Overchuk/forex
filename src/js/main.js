@@ -120,8 +120,7 @@ $('.calculate').on('click', function () {
 
   let val = document.getElementById('amount').value;
   
-  let number = document.getElementById('number__shares')
-  .innerHTML = Math.round(+val / sharest);
+  let number = document.getElementById('number__shares').innerHTML = Math.round(+val / sharest); 
 
   let netInvestment = document.getElementById('net__investment');
   netInvestment.innerHTML = (Number(Math.round(number * sharest)).toFixed(2));
