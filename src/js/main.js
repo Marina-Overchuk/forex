@@ -111,10 +111,14 @@ $(document).ready(function () {
 
 let select = document.getElementById('selectFee');
 let sharest;
-select.addEventListener('change', function(){  
+select.addEventListener('click', function(){  
   sharest = this.value;
   document.querySelector('.stock__price').innerHTML = Number(sharest).toFixed(2);
 });
+// select.addEventListener('change', function(){  
+//   sharest = this.value;
+//   document.querySelector('.stock__price').innerHTML = Number(sharest).toFixed(2);
+// });
 
 $('.calculate').on('click', function () {
 
