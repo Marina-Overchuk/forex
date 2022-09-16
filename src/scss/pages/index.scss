@@ -26,25 +26,25 @@ input,textarea,select,button:focus-visible {
 }
 
 @font-face {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   src: url(../fonts/Raleway-Regular.ttf);
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   src: url(../fonts/Raleway-SemiBold.ttf);
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   src: url(../fonts/Raleway-Bold.ttf);
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   src: url(../fonts/Raleway-Black.ttf);
   font-weight: 900;
   font-display: swap;
@@ -64,7 +64,7 @@ body {
   line-height: 1.6;
   color: var(--black);
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   background-color: var(--white);
 }
 p {
@@ -77,7 +77,7 @@ p {
   }
 }
 h1 { 
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   font-size: 48px;
   font-weight: 900;
   color: var(--black);
@@ -97,7 +97,7 @@ h1 {
   }
 }
 h2 { 
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   font-size: 36px;
   font-weight: 900;
   color: var(--black);
@@ -117,7 +117,7 @@ h2 {
   }
 }
 h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   font-size: 24px;
   font-weight: 900;
   color: var(--black);
@@ -894,7 +894,7 @@ h3 {
   border-radius: 10px;
 }
 .home__accordion code {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   color: var(--black);
   font-size: 14px;
   font-weight: 400;
@@ -905,7 +905,7 @@ h3 {
 }
 .home__accordion .accordion-button {
   background: transparent;
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   color: var(--black);
   font-size: 18px;
   font-weight: 600;
@@ -923,7 +923,7 @@ h3 {
 }
 .home__accordion .accordion-button:not(.collapsed) {
   color: var(--black);
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.7;
@@ -1032,7 +1032,7 @@ h3 {
 }
 .education__input-search input {
   color: var(--black);
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.7;
@@ -1042,7 +1042,7 @@ h3 {
 }
 .education__input-search input::placeholder {
   color: var(--black);
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.7;
@@ -1785,7 +1785,7 @@ h3 {
   text-align: right;
   width: 85%;
   background: transparent;
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
@@ -1810,12 +1810,12 @@ h3 {
   }
 }
 .form-calculate__block input[type='number']::placeholder {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   color: var(--black);
   opacity: 1;
 }
 .input__calculator p {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
@@ -1979,7 +1979,7 @@ h3 {
   font-weight: 400;
   line-height: 1.6;
   color: #000000;
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   background: var(--white);
   text-transform: lowercase;
 }
@@ -2082,7 +2082,7 @@ h3 {
   }
 }
 .broker-comparison__accordion .accordion-body {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   color: var(--black);
   font-size: 14px;
   font-weight: 400;
@@ -2093,7 +2093,7 @@ h3 {
 }
 .broker-comparison__accordion .accordion-button {
   background: transparent;
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   color: var(--black);
   font-size: 24px;
   font-weight: 900;
@@ -2110,7 +2110,7 @@ h3 {
 }
 .broker-comparison__accordion .accordion-button:not(.collapsed) {
   color: var(--black);
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway-f;
   font-size: 24px;
   font-weight: 900;
   line-height: 1.7;
