@@ -335,14 +335,9 @@ h3 {
   @media (max-width: 575px) {
     width: 40%;
   }
-  @media (max-width: 357px) {
-    width: 33%;
-    display: flex;
-    align-items: center;
-  }
 }
 .header-left__logo img {
-  width: 161px;
+  width: 185px;
   height: auto;
   max-width: 100%;
   max-height: auto;
@@ -440,8 +435,8 @@ h3 {
     padding-top: 20px;
   }
 }
-.title-block__image svg {
-  width: 707px;
+.title-block__image img {
+  width: 565px;
   height: auto;
   max-width: 100%;
   max-height: auto;
@@ -650,6 +645,9 @@ h3 {
     margin-bottom: 40px; 
   }
 }
+.broker-partners__body .container {
+  position: relative;
+}
 .broker-partners__body h2 {
   padding-bottom: 40px;
   margin-bottom: 0;
@@ -675,17 +673,6 @@ h3 {
   @media (max-width: 400px) {
     width: 100px;
   }
-}
-.stars__list {
-  display: flex;
-}
-.stars__list img {
-  width: 20px;
-  height: auto;
-  max-width: 100%;
-  max-height: auto;
-  padding-right: 2.5px;
-  padding-left: 2.5px;
 }
 .broker-partners__block {
   padding: 30px;
@@ -2448,7 +2435,7 @@ transform-box: fill-box;
   }
 }
 .home2-image__education {
-text-align: center;
+  text-align: center;
 }
 .home2__btn {
   @media (max-width: 767px) {
@@ -2468,11 +2455,30 @@ text-align: center;
   background-size: 22px 40px;
   position: absolute;
   display: block;
-  margin-left: 50px;
+  left: -92px;
+  @media (max-width: 1600px) {
+    left: -50px;
+  }
+  @media (max-width: 1450px) {
+    left: -20px;
+  }
   @media (max-width: 1400px) {
-    margin-left: 0;
+    left: 10px;
+  }
+  @media (max-width: 1279px) {
+    left: -40px;
+  }
+  @media (max-width: 1035px) {
+    left: 0px;
+  }
+  @media (max-width: 991px) {
+    left: -30px;
+  }
+  @media (max-width: 773px) {
+    left: 0px;
   }
 }
+
 .home-button-next::after {
   content: " ";
   background-image: url(../img/chevron_right.svg);
@@ -2482,9 +2488,27 @@ text-align: center;
   background-size: 22px 40px;
   position: absolute;
   transform: rotate(180deg);
-  margin-right: 50px;
+  right: -92px;
+  @media (max-width: 1600px) {
+    right: -50px;
+  }
+  @media (max-width: 1450px) {
+    right: -20px;
+  }
   @media (max-width: 1400px) {
-    margin-right: 0;
+    right: 10px;
+  }
+  @media (max-width: 1279px) {
+    right: -40px;
+  }
+  @media (max-width: 1035px) {
+    right: 0px;
+  }
+  @media (max-width: 991px) {
+    right: -30px;
+  }
+  @media (max-width: 773px) {
+    right: 0px;
   }
 }
 .partners-slider__home2 {
