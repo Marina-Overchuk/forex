@@ -69,6 +69,10 @@ $(document).ready(function () {
       // when window width is >= 991px
       991: {
         slidesPerView: 3,
+        spaceBetween: 15
+      },
+      1381: {
+        slidesPerView: 3,
         spaceBetween: 30
       }
     },
