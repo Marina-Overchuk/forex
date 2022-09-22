@@ -64,7 +64,7 @@ body {
   line-height: 1.6;
   color: var(--black);
   box-sizing: border-box;
-  font-family: Raleway-f;
+  font-family: Raleway-f, sans-serif;
   background-color: var(--white);
 }
 p {
@@ -77,7 +77,7 @@ p {
   }
 }
 h1 { 
-  font-family: Raleway-f;
+  font-family: Raleway-f, sans-serif;
   font-size: 48px;
   font-weight: 900;
   color: var(--black);
@@ -97,7 +97,7 @@ h1 {
   }
 }
 h2 { 
-  font-family: Raleway-f;
+  font-family: Raleway-f, sans-serif;
   font-size: 36px;
   font-weight: 900;
   color: var(--black);
@@ -117,7 +117,7 @@ h2 {
   }
 }
 h3 {
-  font-family: Raleway-f;
+  font-family: Raleway-f, sans-serif;
   font-size: 24px;
   font-weight: 900;
   color: var(--black);
@@ -944,7 +944,7 @@ h3 {
   border-radius: 10px;
 }
 .home__accordion code {
-  font-family: Raleway-f;
+  font-family: Raleway-f, sans-serif;
   color: var(--black);
   font-size: 14px;
   font-weight: 400;
@@ -955,7 +955,7 @@ h3 {
 }
 .home__accordion .accordion-button {
   background: transparent;
-  font-family: Raleway-f;
+  font-family: Raleway-f, sans-serif;
   color: var(--black);
   font-size: 18px;
   font-weight: 600;
@@ -973,7 +973,7 @@ h3 {
 }
 .home__accordion .accordion-button:not(.collapsed) {
   color: var(--black);
-  font-family: Raleway-f;
+  font-family: Raleway-f, sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.7;
@@ -1156,7 +1156,7 @@ h3 {
 }
 .education__input-search input {
   color: var(--black);
-  font-family: Raleway-f;
+  font-family: Raleway-f, sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.7;
@@ -1166,10 +1166,11 @@ h3 {
 }
 .education__input-search input::placeholder {
   color: var(--black);
-  font-family: Raleway-f;
+  font-family: Raleway-f, sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.7;
+  opacity: 1;
   @media (max-width: 575px){
     font-size: 16px;
   }
@@ -1918,7 +1919,7 @@ h3 {
   text-align: right;
   width: 85%;
   background: transparent;
-  font-family: Raleway-f;
+  font-family: Raleway-f, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
@@ -1943,12 +1944,12 @@ h3 {
   }
 }
 .form-calculate__block input[type='number']::placeholder {
-  font-family: Raleway-f;
+  font-family: Raleway-f, sans-serif;
   color: var(--black);
   opacity: 1;
 }
 .input__calculator p {
-  font-family: Raleway-f;
+  font-family: Raleway-f, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
@@ -2114,7 +2115,7 @@ h3 {
   font-weight: 400;
   line-height: 1.6;
   color: #000000;
-  font-family: Raleway-f;
+  font-family: Raleway-f, sans-serif;
   background: var(--white);
   text-transform: lowercase;
 }
@@ -2236,7 +2237,7 @@ h3 {
   }
 }
 .broker-comparison__accordion .accordion-body {
-  font-family: Raleway-f;
+  font-family: Raleway-f, sans-serif;
   color: var(--black);
   font-size: 14px;
   font-weight: 400;
@@ -2247,7 +2248,7 @@ h3 {
 }
 .broker-comparison__accordion .accordion-button {
   background: transparent;
-  font-family: Raleway-f;
+  font-family: Raleway-f, sans-serif;
   color: var(--black);
   font-size: 24px;
   font-weight: 900;
@@ -2264,7 +2265,7 @@ h3 {
 }
 .broker-comparison__accordion .accordion-button:not(.collapsed) {
   color: var(--black);
-  font-family: Raleway-f;
+  font-family: Raleway-f, sans-serif;
   font-size: 24px;
   font-weight: 900;
   line-height: 1.7;
