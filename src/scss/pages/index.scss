@@ -644,6 +644,7 @@ h3 {
 /***broker partners***/
 .broker-partners__body {
   margin-bottom: 120px;
+  position: relative;
   @media (max-width: 991px) {
     margin-bottom: 80px;
   }
@@ -995,6 +996,80 @@ h3 {
   align-items: center;
   background-image: url(../img/check_mark.svg);
   transform: rotate(-180deg);
+}
+.title__search-brokers {
+  padding-bottom: 40px;
+  @media (max-width: 767px) {
+    padding-bottom: 20px;
+  }
+}
+.home-button-prev::after {
+  content: " ";
+  background-image: url(../img/chevron_right.svg);
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 40px;
+  background-size: 22px 40px;
+  position: absolute;
+  display: block;
+  left: -92px;
+  @media (max-width: 1600px) {
+    left: -50px;
+  }
+  @media (max-width: 991px) {
+    left: -30px;
+  }
+  @media (max-width: 773px) {
+    left: 0px;
+  }
+}
+.home-button-next::after {
+  content: " ";
+  background-image: url(../img/chevron_right.svg);
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 40px;
+  background-size: 22px 40px;
+  position: absolute;
+  transform: rotate(180deg);
+  right: -92px;
+  @media (max-width: 1600px) {
+    right: -50px;
+  }
+  @media (max-width: 991px) {
+    right: -30px;
+  }
+  @media (max-width: 773px) {
+    right: 0px;
+  }
+}
+.partners-slider {
+  @media (max-width: 575px) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  @media (max-width: 350px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.home2__btn {
+  @media (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.home2-image__education {
+  text-align: center;
+}
+.search-brokers__block-links span {
+  color: var(--red);
+  font-weight: 900;
+}
+.home2__education {
+  @media (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 /*************************************EDUCATION PAGE***********************************************/
@@ -2478,130 +2553,5 @@ h3 {
   }
 }
 
-/** animation**/
 
-#screen_2 {
-animation: screen2  1s linear alternate;
-transform-origin: center;
-transform-box: fill-box;
-animation-delay: 0.5s;
-}
-@keyframes screen2 {
-  from {
-    transform: scale(0);
-    }
-  to {
-    transform: scale(1);
-    }
-}
-
-#screen_1 {
-
-animation: screen1  1s linear alternate;
-transform-origin: center;
-transform-box: fill-box;
-animation-delay: 1s;
-}
-@keyframes screen1 {
-  from {
-    transform: scale(0);
-    }
-  to {
-    transform: scale(1);
-    }
-}
-
-#dollar {
-
-animation: dollar  1.5s linear alternate infinite;
-transform-origin: center;
-transform-box: fill-box;
-}
-@keyframes dollar {
-  from {
-    transform: rotateY(0);
-    }
-  to {
-    transform: rotateY(30deg);
-    }
-}
-
-/*******************HOME 2*************************/
-
-.title__search-brokers {
-  padding-bottom: 40px;
-  @media (max-width: 767px) {
-    padding-bottom: 20px;
-  }
-}
-.search-brokers__block-links span {
-  color: var(--red);
-  font-weight: 900;
-}
-.home2__education {
-  @media (max-width: 767px) {
-    text-align: center;
-  }
-}
-.home2-image__education {
-  text-align: center;
-}
-.home2__btn {
-  @media (max-width: 767px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-.broker-partners__body {
-  position: relative;
-}
-.home-button-prev::after {
-  content: " ";
-  background-image: url(../img/chevron_right.svg);
-  background-repeat: no-repeat;
-  width: 22px;
-  height: 40px;
-  background-size: 22px 40px;
-  position: absolute;
-  display: block;
-  left: -92px;
-  @media (max-width: 1600px) {
-    left: -50px;
-  }
-
-  @media (max-width: 991px) {
-    left: -30px;
-  }
-  @media (max-width: 773px) {
-    left: 0px;
-  }
-}
-
-.home-button-next::after {
-  content: " ";
-  background-image: url(../img/chevron_right.svg);
-  background-repeat: no-repeat;
-  width: 22px;
-  height: 40px;
-  background-size: 22px 40px;
-  position: absolute;
-  transform: rotate(180deg);
-  right: -92px;
-  @media (max-width: 1600px) {
-    right: -50px;
-  }
- 
-  @media (max-width: 991px) {
-    right: -30px;
-  }
-  @media (max-width: 773px) {
-    right: 0px;
-  }
-}
-.partners-slider__home2 {
-  @media (max-width: 575px) {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-}
 
