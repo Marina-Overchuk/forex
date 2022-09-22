@@ -4,7 +4,6 @@ new WOW().init();
 
 $(document).ready(function () {
 
-
   //header-burger
 
   $('.header__burger').on('click', function () {
@@ -20,7 +19,6 @@ $(document).ready(function () {
     }
 
   });
-
 
   // header-scroll
 
@@ -44,7 +42,6 @@ $(document).ready(function () {
   })
 
   headerScroll();
-
 
   ///Services-Slider
 
@@ -119,10 +116,7 @@ select.addEventListener('click', function(){
   sharest = this.value;
   document.querySelector('.stock__price').innerHTML = Number(sharest).toFixed(2);
 });
-// select.addEventListener('change', function(){  
-//   sharest = this.value;
-//   document.querySelector('.stock__price').innerHTML = Number(sharest).toFixed(2);
-// });
+
 
 $('.calculate').on('click', function () {
 
@@ -139,8 +133,8 @@ $('.calculate').on('click', function () {
 
 });
 
-
 //popover
+
 $(function() {
 	$('[data-toggle="popover"]').popover()
 })
