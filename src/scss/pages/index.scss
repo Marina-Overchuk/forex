@@ -2157,7 +2157,7 @@ h3 {
   border: 1px solid #F1F2F4;
   box-shadow: 0px 5px 30px #F1F2F4;
   border-radius: 10px;
-  width: 19%;
+  width: 25%;
   padding: 40px 30px;
   min-height: 100%;
   margin: 0 15px;
@@ -2177,6 +2177,7 @@ h3 {
     margin: 0 2.5px
   }
 }
+
 .btn__broker-block {
   margin-top: 30px;
   margin-bottom: 24px;
@@ -2206,6 +2207,10 @@ h3 {
   display: flex;
   margin-bottom: 60px;
   justify-content: start;
+  margin-left: 20%;
+}
+.row__logo {
+  margin-left: 20%;
 }
 /**************accordion********************/
 .broker-comparison__page {
@@ -2291,22 +2296,8 @@ h3 {
   text-align: left;
   padding: 10px 0px;
 }
-.broker-comparison-row__wrapper h6 {
-  padding-left: 15px;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.8;
-  margin: 0 15px;
-  @media (max-width: 991px) {
-    padding: 0px 15px;
-    margin: 0 5px;
-  }
-   @media (max-width: 575px) {
-    padding: 0px 5px;
-  }
-}
 .broker-comparison-row__wrapper {
-  &:nth-child(odd){
+  &:nth-child(even){
     background: #F9FAFB;
     border-radius: 5px;
   }
@@ -2314,28 +2305,38 @@ h3 {
 
 .broker-comparison-row__wrapper {
   &:first-child {
-  background: #F5F7F9;
+  background: transparent;
 }
 }
 .broker-comparison__row {
   display: flex;
   justify-content: start;
 }
+.broker-comparison-logo__wrapper {
+  width: 25%;
+  margin: 0 15px;
+  text-align: center;
+}
+.broker-comparison__row img {
+  width: 100px;
+  height: auto;
+  max-width: 100%;
+  max-height: auto;
+}
 .broker-comparison__row p {
   width: 19%;
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 15px;
+  text-align: center;
   @media (max-width: 1279px) {
     padding-right: 5px;
+    padding-left: 5px;
   }
   @media (max-width: 991px) {
-    padding: 0px 5px;
     margin: 0 5px;
-    text-align: center;
   }
   @media (max-width: 575px) {
-    padding: 0px 5px;
     font-size: 11px;
   }
   @media (max-width: 400px) {
@@ -2346,6 +2347,7 @@ h3 {
 }
 .broker-comparison__row p:first-child {
   padding-left: 15px;
+  text-align: left;
   @media (max-width: 991px) {
     padding-left: 5px;
   }
@@ -2356,7 +2358,28 @@ h3 {
     padding-right: 5px;
   }
 }
-
+.broker-comparison-row__wrapper h6 {
+  font-size: 14px;
+  padding-left: 15px;
+  width: 19%;
+  font-weight: 700;
+  line-height: 1.8;
+  margin: 0 15px;
+  @media (max-width: 991px) {
+    padding: 0px 15px;
+    margin: 0 5px;
+  }
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
+   @media (max-width: 575px) {
+    padding: 0px 5px;
+    font-size: 11px;
+  }
+  @media (max-width: 350px) {
+    font-size: 10px;
+  }
+}
 .broker__name p {
   font-weight: 900;
   @media (max-width: 450px) {

@@ -103,7 +103,7 @@ $(document).ready(function () {
     const ind = $('.broker-block__close').index(this);
     $('.broker-comparison-row__wrapper .broker-comparison__row').each((i, e) => {
       const $ths = $(e)
-      $ths.find('p').eq(ind).hide()
+      $ths.find('p, span').eq(ind).hide()
     })
 
   });
