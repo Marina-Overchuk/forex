@@ -2311,6 +2311,12 @@ h3 {
     border-radius: 5px;
   }
 }
+
+.broker-comparison-row__wrapper {
+  &:first-child {
+  background: #F5F7F9;
+}
+}
 .broker-comparison__row {
   display: flex;
   justify-content: start;
@@ -2348,6 +2354,19 @@ h3 {
   padding-right: 15px;
   @media (max-width: 1279px) {
     padding-right: 5px;
+  }
+}
+
+.broker__name p {
+  font-weight: 900;
+  @media (max-width: 450px) {
+    font-size: 9.5px;
+  }
+  @media (max-width: 400px) {
+    font-size: 8.5px;
+  }
+  @media (max-width: 350px) {
+    font-size: 8px;
   }
 }
 .broker__block__img {
@@ -2551,6 +2570,5 @@ h3 {
     padding-right: 6px;
   }
 }
-
 
 
