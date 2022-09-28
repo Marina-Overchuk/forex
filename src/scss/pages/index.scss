@@ -2181,7 +2181,7 @@ h3 {
   margin-bottom: 24px;
   max-width: 200px;
   width: auto;
-  @media (max-width: 1279px) {
+  @media (max-width: 1320px) {
     font-size: 10px;
   }
   @media (max-width: 991px) {
@@ -2341,6 +2341,18 @@ h3 {
   width: 25%;
   margin: 0 15px;
   text-align: center;
+  @media (max-width: 1399px) {
+    margin: 0 10px;
+  }
+  @media (max-width: 1279px) {
+    margin: 0 8px;
+  }
+  @media (max-width: 1200px) {
+    margin: 0 13px;
+  }
+  @media (max-width: 1045px) {
+    margin: 0 15px;
+  }
   @media (max-width: 675px) {
     margin: 0 7px;
   }
