@@ -1019,8 +1019,11 @@ h3 {
   @media (max-width: 991px) {
     left: -30px;
   }
-  @media (max-width: 773px) {
+  @media (max-width: 776px) {
     left: 0px;
+  }
+  @media (min-width: 1400px) and (max-width: 1450px) {
+    left: -25px;
   }
 }
 .home-button-next::after {
@@ -1039,8 +1042,11 @@ h3 {
   @media (max-width: 991px) {
     right: -30px;
   }
-  @media (max-width: 773px) {
+  @media (max-width: 776px) {
     right: 0px;
+  }
+  @media (min-width: 1400px) and (max-width: 1450px) {
+    right: -25px;
   }
 }
 .partners-slider {
@@ -1220,11 +1226,7 @@ h3 {
     padding-bottom: 40px;
   }
 }
-.forex-basics-title__body, .trading-tips-title__body, 
-.analysis-title__body, .trading-fundamentals-title__body, 
-.sc-trading-title__body, .asset-allocation-title__body, 
-.profitable-strategy-title__body, .broker-unlim-leverage-title__body, 
-.review-subpage-title__body {
+.body__template-padding {
   padding-top: 160px;
   padding-bottom: 60px;
   @media (max-width: 991px){
